@@ -97,7 +97,7 @@ st.markdown("""
 
 ### How to save a page as a PDF
             
-<img src="https://github.com/daisydream00/images/blob/main/streamlit_pdf.png" width=200 />            
+<img src="https://github.com/daisydream00/images/blob/main/streamlit_pdf.png?raw=true" width=200 />            
             
 """, unsafe_allow_html=True
 )            
