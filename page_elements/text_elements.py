@@ -14,7 +14,7 @@ st.markdown("### :material/list_alt: [`st.write()`](https://docs.streamlit.io/de
 
 
 """
-It acts as a "Swiss army knife" for displaying text, data, or objects in Streamlit. It is a versatile function that automatically determines how to render the content based on the input type. 
+`st.write()` acts as a "Swiss army knife" for displaying text, data, or objects in Streamlit. It is a versatile function that automatically determines how to render the content based on the input type. 
 """
 
  
