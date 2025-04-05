@@ -14,7 +14,7 @@ st.markdown("### :material/list_alt: [`st.write()`](https://docs.streamlit.io/de
 
 
 """
-This is the Swiss Army knife of Streamlit commands: it does different things depending on what you throw at it. 
+It acts as a "Swiss army knife" for displaying text, data, or objects in Streamlit. It is a versatile function that automatically determines how to render the content based on the input type. 
 """
 
  
