@@ -198,7 +198,7 @@ with st.container(border=True):
 
         st.subheader("Setup Instructions")
 
-        st.caption("This page illustrates various text and formatting commands availableis in Streamlit.")
+        st.caption("This page illustrates various text and formatting commands available in Streamlit.")
         
         st.error("This is an error! Here are the causes: ...")
 
