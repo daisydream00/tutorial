@@ -293,11 +293,6 @@ with st.echo():
 
 st.divider()
 
-us_city_pop["pop"] = us_city_pop["pop"] / 20
-
-code = """
-st.map(us_city_pop, latitude="lat", longitude="lon", size="pop")
-"""
 
 st.markdown("### :material/list_alt: [`st.map()`](https://docs.streamlit.io/develop/api-reference/charts/st.map)")
 
@@ -305,14 +300,19 @@ st.markdown("<br/>", unsafe_allow_html=True)
 
 st.markdown("#### :material/code_blocks: :blue[Source code to run]")
 
+us_city_pop["pop"] = us_city_pop["pop"] / 20
+
+code = """
+st.map(us_city_pop, latitude="lat", longitude="lon", size="pop")
+"""
+
 with st.container(border=True):
     st.code(code)
 
 st.markdown("#### :material/map: :red[Rendered output]") 
 
 with st.container(border=True):
-    with st.echo():
-        st.map(us_city_pop, latitude="lat", longitude="lon", size="pop", zoom=4)
+    st.map(us_city_pop, latitude="lat", longitude="lon", size="pop")
 
 
 with st.expander("Show documentation"):
