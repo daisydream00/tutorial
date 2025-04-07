@@ -86,7 +86,7 @@ st.divider()
 st.markdown("### :material/list_alt: [`st.column_config()`](https://docs.streamlit.io/develop/api-reference/data/st.column_config)")
 
 
-st.markdown("""The `st.column_config` class is a powerful tool for configuring data display and interaction.
+st.markdown("""The `st.column_config` is a utility for configuring data display and interaction.
 It provides a suite of methods to tailor your columns to various data types, translating data into user-friendly formats or utilizing charts and progress bars for clearer data display.
 """)
 
