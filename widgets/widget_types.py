@@ -118,8 +118,7 @@ with st.container(border=True):
             min_value=10.0, max_value=50.0
         )
 
-st.markdown(f"The value of variable <code>slider_float</code> is <code>{slider_float}</code> of <code>{type(slider_float)}</code>.",
-            unsafe_allow_html=True)
+st.markdown(f"The value of variable `slider_float` is `{slider_float}` of `{type(slider_float)}`.")
 
 with st.container(border=True):
     with st.echo("below"):
@@ -129,8 +128,7 @@ with st.container(border=True):
             min_value=10, max_value=50
         )
 
-st.markdown(f"The value of variable <code>slider_int</code> is <code>{slider_int}</code> of <code>{type(slider_int)}</code>.",
-            unsafe_allow_html=True)
+st.markdown(f"The value of variable `slider_int` is `{slider_int}` of `{type(slider_int)}`.")
 
 st.divider()
 
@@ -146,8 +144,7 @@ with st.container(border=True):
             'Choose a value', min_value=10.0, max_value=50.0,
             value=(10.0, 20.0)
         )
-st.markdown(f"The value of variable <code>slider_float_range</code> is <code>{slider_float_range}</code> of <code>{type(slider_float_range)}</code>.",
-            unsafe_allow_html=True)
+st.markdown(f"The value of variable `slider_float_range` is `{slider_float_range}` of `{type(slider_float_range)}`.")
 
 with st.container(border=True):
     with st.echo("below"):
@@ -156,8 +153,7 @@ with st.container(border=True):
             'Choose a value', min_value=10, max_value=50, 
             value=[30, 40]
         )
-st.markdown(f"The value of variable <code>slider_int_range</code> is <code>{slider_int_range}</code> of <code>{type(slider_int_range)}</code>.",
-            unsafe_allow_html=True)
+st.markdown(f"The value of variable `slider_int_range` is `{slider_int_range}` of `{type(slider_int_range)}`.")
 
 
 with st.expander("Show documentation"):
@@ -174,15 +170,13 @@ with st.container(border=True):
     with st.echo("below"):
         input_float = st.number_input('Input a value')
 
-st.markdown(f"The value of variable <code>input_float</code> is <code>{input_float}</code> of <code>{type(input_float)}</code>.",
-            unsafe_allow_html=True)
+st.markdown(f"The value of variable `input_float` is `{input_float}` of `{type(input_float)}`.")
 
 with st.container(border=True):
     with st.echo("below"):
         input_int = st.number_input('Input a value', value=0)
 
-st.markdown(f"The value of variable <code>input_int</code> is <code>{input_int}</code> of <code>{type(input_int)}</code>.",
-            unsafe_allow_html=True)
+st.markdown(f"The value of variable `input_int` is `{input_int}` of `{type(input_int)}`.")
 
 with st.expander("Show documentation"):
     st.write(st.number_input.__doc__)
@@ -198,8 +192,7 @@ with st.container(border=True):
     with st.echo("below"):
         # default to False
         agree_bool = st.checkbox("I agree")
-st.markdown(f"The value of variable <code>agree_bool</code> is <code>{agree_bool}</code> of <code>{type(agree_bool)}</code>.",
-            unsafe_allow_html=True)
+st.markdown(f"The value of variable `agree_bool` is `{agree_bool}`> of `{type(agree_bool)}`.")
 with st.expander("Show documentation"):
     st.write(st.checkbox.__doc__)
 st.divider()
@@ -213,8 +206,7 @@ with st.container(border=True):
     with st.echo("below"):
         # default to False
         activated_bool = st.toggle("Activate feature")
-st.markdown(f"The value of variable <code>activated_bool</code> is <code>{activated_bool}</code> of <code>{type(activated_bool)}</code>.",
-            unsafe_allow_html=True)
+st.markdown(f"The value of variable `activated_bool` is `{activated_bool}` of `{type(activated_bool)}`.")
 with st.expander("Show documentation"):
     st.write(st.toggle.__doc__)
 st.divider()
@@ -229,8 +221,7 @@ with st.container(border=True):
     with st.echo("below"):
         # default to the current time
         t_time = st.time_input("Set an alarm for")
-st.markdown(f"The value of variable <code>t_time</code> is <code>{t_time}</code> of <code>{type(t_time)}</code>.",
-            unsafe_allow_html=True)
+st.markdown(f"The value of variable `t_time` is `{t_time}` of `{type(t_time)}`.")
 with st.expander("Show documentation"):
     st.write(st.time_input.__doc__)
 st.divider()
@@ -244,7 +235,6 @@ with st.container(border=True):
     with st.echo("below"):
         # default to the current date
         bd_date = st.date_input("When's your birthday?")
-st.markdown(f"The value of variable <code>bd_date</code> is <code>{bd_date}</code> of <code>{type(bd_date)}</code>.",
-            unsafe_allow_html=True)
+st.markdown(f"The value of variable `bd_date` is `{bd_date}` of `{type(bd_date)}`.")
 with st.expander("Show documentation"):
     st.write(st.date_input.__doc__)
