@@ -21,15 +21,7 @@ st.markdown("### :material/dataset: Data to use")
 
 
 
-code = """
-import pandas as pd
 
-medals = pd.read_csv(
-    'https://raw.githubusercontent.com/daisydream00/tutorial/refs/heads/main/static/medals.csv', parse_dates=['year']
-    ).query("country == 'China'")
-"""
-
-st.code(code)
 
 medals = load_to_df('https://raw.githubusercontent.com/daisydream00/tutorial/refs/heads/main/static/medals.csv', 
                     parse_dates=['year']).query("country == 'China'")
