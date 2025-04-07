@@ -1,0 +1,25 @@
+country,year,city,Bronze,Gold,Silver
+China,1992-01-01,Barcelona,16.0,16.0,22.0
+China,1996-01-01,Atlanta,12.0,16.0,22.0
+China,2000-01-01,Sydney,14.0,28.0,16.0
+China,2004-01-01,Athens,14.0,32.0,17.0
+China,2008-01-01,Beijing,30.0,48.0,22.0
+China,2012-01-01,London,22.0,39.0,31.0
+China,2016-01-01,Rio de Janeiro,26.0,26.0,18.0
+China,2020-01-01,Tokyo,19.0,38.0,32.0
+China,2024-01-01,Paris,24.0,40.0,27.0
+Russia,1996-01-01,Atlanta,16.0,26.0,21.0
+Russia,2000-01-01,Sydney,29.0,32.0,28.0
+Russia,2004-01-01,Athens,36.0,28.0,26.0
+Russia,2008-01-01,Beijing,23.0,24.0,13.0
+Russia,2012-01-01,London,26.0,18.0,21.0
+Russia,2016-01-01,Rio de Janeiro,20.0,19.0,17.0
+United States,1992-01-01,Barcelona,37.0,37.0,34.0
+United States,1996-01-01,Atlanta,25.0,44.0,32.0
+United States,2000-01-01,Sydney,32.0,37.0,24.0
+United States,2004-01-01,Athens,26.0,36.0,39.0
+United States,2008-01-01,Beijing,37.0,36.0,39.0
+United States,2012-01-01,London,30.0,48.0,26.0
+United States,2016-01-01,Rio de Janeiro,38.0,46.0,37.0
+United States,2020-01-01,Tokyo,33.0,39.0,41.0
+United States,2024-01-01,Paris,41.0,40.0,44.0
