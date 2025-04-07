@@ -31,14 +31,12 @@ medals = pd.read_csv(
 
 st.code(code)
 
-medals = pd.read_csv(
-    'https://raw.githubusercontent.com/daisydream00/tutorial/refs/heads/main/static/medals.csv', parse_dates=['year']
-    ).query("country == 'China'")
+medals = load_to_df('https://raw.githubusercontent.com/daisydream00/tutorial/refs/heads/main/static/medals.csv', 
+                    parse_dates=['year']).query("country == 'China'")
 
 st.write(medals)
 
 st.divider()
-
 
 st.markdown("### :material/list_alt: [`st.line_chart()`](https://docs.streamlit.io/develop/api-reference/charts/st.line_chart)")
 
