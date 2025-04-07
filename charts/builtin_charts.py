@@ -160,19 +160,13 @@ st.divider()
 
 st.markdown("### :material/dataset: Data to use")
 
-code = """
-import pandas as pd
+with st.echo():
+    import pandas as pd
+    
+    iris = pd.read_csv('https://raw.githubusercontent.com/mwaskom/seaborn-data/master/iris.csv')
 
-iris = pd.read_csv('https://raw.githubusercontent.com/mwaskom/seaborn-data/master/iris.csv')
-"""
+    st.write(iris)
 
-with st.container():
-    st.code(code)
-
-iris = load_to_df('https://raw.githubusercontent.com/mwaskom/seaborn-data/master/iris.csv')
-
-
-st.write(iris)
 
 st.divider()
 
