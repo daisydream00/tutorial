@@ -272,8 +272,9 @@ with st.container(border=True):
 
 st.markdown("#### :material/bar_chart: :red[Rendered output]") 
 with st.container(border=True):
-    st.bar_chart(tips, x=tips_x, y=tips_y, color=tips_color, horizontal=tips_horizontal,
-                 width=720, height=500)
+    with st.echo():
+        st.bar_chart(tips, x=tips_x, y=tips_y, color=tips_color, horizontal=tips_horizontal,
+                     width=720, height=500)
 
 with st.expander("Show documentation"):
     st.write(st.bar_chart.__doc__)
