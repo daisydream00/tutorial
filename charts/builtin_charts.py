@@ -56,8 +56,6 @@ with st.container(border=True):
     st.line_chart(medals, x="year", y="total", color="type", 
                   width=720, height=500)
 
-
-
 with st.expander("Show documentation"):
     st.write(st.line_chart.__doc__)
 
@@ -97,8 +95,6 @@ with st.container(border=True):
     st.area_chart(medals, x="year", y="total", color="type", stack=stack,
                  width=720, height=500)
 
-
-
 with st.expander("Show documentation"):
     st.write(st.area_chart.__doc__)
 
@@ -116,22 +112,13 @@ Rather, they are mapped into independent columns (e.g., `Gold`, `Silver`, and `B
 
 st.markdown("### :material/dataset: Data to use")
 
-
-code = """
-import pandas as pd
-
-medals_w = pd.read_csv(
-    'https://raw.githubusercontent.com/justinjiajia/datafiles/main/medals_w.csv', parse_dates=['year']
+with st.echo():
+    import pandas as pd
+    medals_w = pd.read_csv(
+    'https://raw.githubusercontent.com/daisydream00/tutorial/refs/heads/main/static/medals_w.csv', parse_dates=['year']
     ).query("country == 'China'")
-"""
-
-with st.container():
-    st.code(code)
-
-medals_w = load_to_df('https://raw.githubusercontent.com/justinjiajia/datafiles/main/medals_w.csv', parse_dates=['year']).query("country == 'China'")    
-
-st.write(medals_w)
-
+    st.write(medals_w)
+    
 
 st.divider()
 
