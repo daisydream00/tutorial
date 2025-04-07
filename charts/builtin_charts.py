@@ -19,17 +19,19 @@ They all work similarly by aligning variables with desired aesthetics.
 
 st.markdown("### :material/dataset: Data to use")
 
-with st.container(border=True):
-    with st.echo():
-        code = """      
-        medals = pd.read_csv(
-            'https://raw.githubusercontent.com/daisydream00/tutorial/refs/heads/main/static/medals.csv', parse_dates=['year']
-            ).query("country == 'China'")
-        """
+code = """
+medals = pd.read_csv(
+    'https://raw.githubusercontent.com/daisydream00/tutorial/refs/heads/main/static/medals.csv', parse_dates=['year']
+    ).query("country == 'China'")
+"""
 
-        st.code(code)
-        
-        st.write(medals)
+st.code(code)
+
+medals = pd.read_csv(
+    'https://raw.githubusercontent.com/daisydream00/tutorial/refs/heads/main/static/medals.csv', parse_dates=['year']
+    ).query("country == 'China'")
+
+st.write(medals)
 
 st.divider()
 
