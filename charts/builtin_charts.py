@@ -153,7 +153,7 @@ with st.container(border=True):
         medals_w, x="year", 
         y=['Gold', 'Silver', 'Bronze'], 
         color=["#A77044", "#FEE101", "#A7A7AD"],
-        width=720, height=500, use_container_width=False)
+        width=720, height=500)
  
 
 st.divider()
