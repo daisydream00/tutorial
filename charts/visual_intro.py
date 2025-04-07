@@ -30,7 +30,7 @@ st.markdown("""
 <img src="static/iris_datasets.png" width="80%"/>
 <br/>
             
-<img src="iris_3_plots.png?raw=true" width="80%">
+<img src="https://raw.githubusercontent.com/daisydream00/tutorial/refs/heads/main/static/iris_3_plots.png" width="80%">
 <br/>
             
 - Discrete (or categorical) variables: positions, marker shapes, line types, colors (on a discrete scale), etc.
