@@ -126,6 +126,8 @@ st.divider()
 
 type_text = st.selectbox("Select chart type", ["Area", "Line"])
 
+chart_type = {"Area": st.area_chart, "Line": st.line_chart}
+
 st.markdown("#### :material/code_blocks: :blue[Source code to run]")
 
 
