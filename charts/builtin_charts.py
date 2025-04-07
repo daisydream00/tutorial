@@ -284,19 +284,12 @@ st.divider()
 st.markdown("### :material/dataset: Data to use (Optional)")
 
 
-code = """
-import pandas as pd
+with st.echo():
+    import pandas as pd
+    
+    us_city_pop = pd.read_csv("https://raw.githubusercontent.com/plotly/datasets/master/2014_us_cities.csv")
 
-us_city_pop = pd.read_csv("https://raw.githubusercontent.com/plotly/datasets/master/2014_us_cities.csv")
-"""
-
-with st.container():
-    st.code(code)
-
-us_city_pop = load_to_df('https://raw.githubusercontent.com/plotly/datasets/master/2014_us_cities.csv')
-
-
-st.write(us_city_pop)
+    st.write(us_city_pop)
 
 st.divider()
 
