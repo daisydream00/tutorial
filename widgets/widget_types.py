@@ -192,7 +192,7 @@ with st.container(border=True):
     with st.echo("below"):
         # default to False
         agree_bool = st.checkbox("I agree")
-st.markdown(f"The value of variable `agree_bool` is `{agree_bool}`> of `{type(agree_bool)}`.")
+st.markdown(f"The value of variable `agree_bool` is `{agree_bool}` of `{type(agree_bool)}`.")
 with st.expander("Show documentation"):
     st.write(st.checkbox.__doc__)
 st.divider()
