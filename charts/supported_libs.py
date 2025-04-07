@@ -58,8 +58,8 @@ fig = px.scatter(gapminder, x="gdpPercap", y="lifeExp", size="pop", color='conti
                  labels={'gdpPercap': 'GDP Per Capita', 'lifeExp': 'Life Expectancy', "continent": "Continent"},
                  animation_frame="year", animation_group="country",
                  width=800, height=500)
-
-st.plotly_chart(fig, use_container_width=False)
+fig.update_layout(legend=dict(yanchor="top", y=0.99, xanchor="left", x=0.01))
+st.plotly_chart(fig)
 """
 
 
@@ -78,7 +78,7 @@ with st.container(border=True):
                     labels={'gdpPercap': 'GDP Per Capita', 'lifeExp': 'Life Expectancy', "continent": "Continent"},
                    animation_frame="year", animation_group="country", width=800, height=500)
     fig.update_layout(legend=dict(yanchor="top", y=0.99, xanchor="left", x=0.01))
-    st.plotly_chart(fig, use_container_width=False)
+    st.plotly_chart(fig)
 
 
 st.divider()
