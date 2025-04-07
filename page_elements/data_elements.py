@@ -23,7 +23,7 @@ st.divider()
 
 st.markdown("### :material/list_alt: [`st.dataframe()`](https://docs.streamlit.io/develop/api-reference/data/st.dataframe)")
 
-st.markdown("""The `st.dataframe` is used to display a dataframe (like a table of data) in an interactive and scrollable format within your Streamlit app. It is a powerful way to present tabular data, allowing users to view, sort, and explore the data dynamically.
+st.markdown("""The `st.dataframe()` is used to display a dataframe (like a table of data) in an interactive and scrollable format within your Streamlit app. It is a powerful way to present tabular data, allowing users to view, sort, and explore the data dynamically.
 """)
 
 with st.container(border=True):
@@ -37,7 +37,7 @@ st.divider()
 
 st.markdown("### :material/list_alt: [`st.table()`](https://docs.streamlit.io/develop/api-reference/data/st.table)")
 
-st.markdown("""The `st.table` is used to display static tables that are non-interactive.
+st.markdown("""The `st.table()` is used to display static tables that are non-interactive.
 """)
 
 with st.container(border=True):
@@ -54,7 +54,7 @@ st.divider()
 
 st.markdown("### :material/list_alt: [`st.data_editor()`](https://docs.streamlit.io/develop/api-reference/data/st.data_editor)")
 
-st.markdown("""The `st.data_editor` allows you to create an editable table in your Streamlit app, enabling users to directly modify the data in real-time.
+st.markdown("""The `st.data_editor()` allows you to create an editable table in your Streamlit app, enabling users to directly modify the data in real-time.
 """)
 
 with st.container(border=True):
