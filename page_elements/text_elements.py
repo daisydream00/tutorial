@@ -124,6 +124,9 @@ st.divider()
 
 st.markdown("### :material/list_alt: [`st.html()`](https://docs.streamlit.io/develop/api-reference/utilities/st.html)")
 
+"""
+`st.html()`  allows you to embed custom HTML content directly in your Streamlit app. 
+"""
 with st.container(border=True):
     with st.echo():
         st.html(
