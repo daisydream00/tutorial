@@ -15,7 +15,7 @@ Essentially, data visualization is a process of expressing many aspects of our d
 
 <br/>
 
-<img src="static/common-aesthetics.png?nocache=1" width="70%"/>
+<img src="static/common-aesthetics.png" width="70%"/>
 
 """, unsafe_allow_html=True)
 
