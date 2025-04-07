@@ -57,11 +57,6 @@ with st.container(border=True):
                   width=720, height=500)
 
 
-### st.line_chart will sort the values of the column used for the x axis automatically """
-## To create an effective line chart, we typcially need to ensure that the values of the variable used for the horizontal axis are sorted in their inherent order.
-##This is because  Therefore, messing up the order will result in confusing and meaningless charts that do not accurately represent the underlying data patterns.
-##""")
-
 
 with st.expander("Show documentation"):
     st.write(st.line_chart.__doc__)
@@ -100,7 +95,7 @@ with st.container(border=True):
 st.markdown("#### :material/area_chart: :red[Rendered output]") 
 with st.container(border=True):
     st.area_chart(medals, x="year", y="total", color="type", stack=stack,
-                 width=720, height=500, use_container_width=False)
+                 width=720, height=500)
 
 
 
