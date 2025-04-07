@@ -256,11 +256,13 @@ tips_horizontal = st.checkbox("horizontal layout")
 
 if tips_color:
     code = f"""
-    st.bar_chart(tips, x="{tips_x}", y="{tips_y}", color="{tips_color}"{', horizontal=True' if tips_horizontal else ""})
+    st.bar_chart(tips, x="{tips_x}", y="{tips_y}", color="{tips_color}"{', horizontal=True' if tips_horizontal else ""},
+                width=720, height=500)
     """
 else:
     code = f"""
-    st.bar_chart(tips, x="{tips_x}", y="{tips_y}"{', horizontal=True' if tips_horizontal else ""})
+    st.bar_chart(tips, x="{tips_x}", y="{tips_y}"{', horizontal=True' if tips_horizontal else ""},
+                width=720, height=500)
     """
 
 st.markdown("#### :material/code_blocks: :blue[Source code to run]")
@@ -271,7 +273,7 @@ with st.container(border=True):
 st.markdown("#### :material/bar_chart: :red[Rendered output]") 
 with st.container(border=True):
     st.bar_chart(tips, x=tips_x, y=tips_y, color=tips_color, horizontal=tips_horizontal,
-                 width=720, height=500, use_container_width=False)
+                 width=720, height=500)
 
 with st.expander("Show documentation"):
     st.write(st.bar_chart.__doc__)
