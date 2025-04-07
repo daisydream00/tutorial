@@ -212,10 +212,10 @@ st.markdown("####  :material/scatter_plot: :red[Rendered output]")
 with st.container(border=True):
     if iris_color:
         st.scatter_chart(iris, x=iris_x, y=iris_y, size=iris_size, color="species",
-                        width=720, height=500, use_container_width=False)
+                        width=720, height=500)
     else:
         st.scatter_chart(iris, x=iris_x, y=iris_y, size=iris_size, 
-                         width=720, height=500, use_container_width=False)
+                         width=720, height=500)
 
 
 with st.expander("Show documentation"):
@@ -226,18 +226,12 @@ st.divider()
 st.markdown("### :material/dataset: Data to use")
 
 
-code = """
-import pandas as pd
+with st.echo():
+    import pandas as pd
 
-tips = pd.read_csv('https://raw.githubusercontent.com/mwaskom/seaborn-data/master/tips.csv')
-"""
+    tips = pd.read_csv('https://raw.githubusercontent.com/mwaskom/seaborn-data/master/tips.csv')
 
-with st.container():
-    st.code(code)
-
-tips = load_to_df('https://raw.githubusercontent.com/mwaskom/seaborn-data/master/tips.csv')
-
-st.write(tips)
+    st.write(tips)
 
 st.divider()
 
