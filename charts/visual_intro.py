@@ -15,7 +15,7 @@ Essentially, data visualization is a process of expressing many aspects of our d
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/justinjiajia/img/master/python/common-aesthetics.png" width="70%"/>
+<img src="static/common-aesthetics.png" width="70%"/>
 
 """, unsafe_allow_html=True)
 
@@ -27,10 +27,10 @@ st.markdown("""
 ---
 ## Examples of variable-to-aesthetic mapping
 <br/>
-<img src="https://raw.githubusercontent.com/justinjiajia/img/master/python/iris_datasets.png" width="80%"/>
+<img src="static/iris_datasets.png" width="80%"/>
 <br/>
             
-<img src="https://raw.githubusercontent.com/justinjiajia/img/master/python/iris_3_plots.png" width="80%">
+<img src="static/iris_3_plots.png" width="80%">
 <br/>
             
 - Discrete (or categorical) variables: positions, marker shapes, line types, colors (on a discrete scale), etc.
