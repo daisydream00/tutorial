@@ -98,8 +98,7 @@ with st.container(border=True):
             ["Green", "Yellow", "Red", "Blue"]
         )
 
-st.markdown(f"The value of variable <code>colors_list</code> is <code>{colors_list}</code> of <code>{type(colors_list)}</code>.",
-            unsafe_allow_html=True)
+st.markdown(f"The value of variable `colors_list` is `{colors_list}` of `{type(colors_list)}`.")
 with st.expander("Show documentation"):
     st.write(st.multiselect.__doc__)
 st.divider()
