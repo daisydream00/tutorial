@@ -20,11 +20,14 @@ They all work similarly by aligning variables with desired aesthetics.
 st.markdown("### :material/dataset: Data to use")
 
 
+import pandas as pd
+
+medals = pd.read_csv(
+    'https://raw.githubusercontent.com/daisydream00/tutorial/refs/heads/main/static/medals.csv', parse_dates=['year']
+    ).query("country == 'China'")
 
 
 
-medals = load_to_df('https://raw.githubusercontent.com/daisydream00/tutorial/refs/heads/main/static/medals.csv', 
-                    parse_dates=['year']).query("country == 'China'")
 
 st.write(medals)
 
