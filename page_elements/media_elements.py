@@ -4,6 +4,8 @@ st.set_page_config(layout="centered")
 
 st.markdown("### :material/list_alt: [`st.image()`](https://docs.streamlit.io/develop/api-reference/media/st.image)")
 
+st.markdown("""The `st.image()` is used to display an image or list of images.
+""")
 
 with st.container(border=True):
     with st.echo():
@@ -25,6 +27,8 @@ st.divider()
 
 st.markdown("### :material/list_alt: [`st.video()`](https://docs.streamlit.io/develop/api-reference/media/st.video)")
 
+st.markdown("""The `st.image()` is used to display video content in your app.
+""")
 
 with st.container(border=True):
     with st.echo():
