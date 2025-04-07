@@ -139,6 +139,9 @@ st.divider()
 
 st.markdown("### :material/list_alt: [`st.code()`](https://docs.streamlit.io/develop/api-reference/text/st.code)")
 
+"""
+`st.code()` a function used to display code snippets in a visually formatted and syntax-highlighted manner within your Streamlit app. 
+"""
 
 with st.container(border=True):
     with st.echo():
