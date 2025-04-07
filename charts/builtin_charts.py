@@ -25,7 +25,7 @@ code = """
 import pandas as pd
 
 medals = pd.read_csv(
-    'https://raw.githubusercontent.com/justinjiajia/datafiles/main/medals.csv', parse_dates=['year']
+    'https://github.com/daisydream00/tutorial/blob/main/static/medals.csv', parse_dates=['year']
     ).query("country == 'China'")
 """
 
