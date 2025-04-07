@@ -16,24 +16,13 @@ st.markdown("## 🎯 Charts for stock price comparison")
 st.markdown("### :material/dataset: Data to use")
 
 
-code = """
-import pandas as pd
+with st.echo():
+    import pandas as pd
 
-stocks = pd.read_csv("https://raw.githubusercontent.com/vega/vega-datasets/main/data/stocks.csv", 
+    stocks = pd.read_csv("https://raw.githubusercontent.com/vega/vega-datasets/main/data/stocks.csv", 
                      parse_dates=['date'], date_format="%b %d %Y")
-"""
 
-st.code(code)
-    
-stocks = load_to_df("https://raw.githubusercontent.com/vega/vega-datasets/main/data/stocks.csv", 
-                    parse_dates=['date'], date_format="%b %d %Y")
-
-#with st.echo():
-#    import pandas as pd
-#    stock_returns = pd.read_csv('https://raw.githubusercontent.com/justinjiajia/datafiles/main/stocks_l.csv', 
-#                         parse_dates=['date'], date_format="%Y-%m-%d")
-
-st.dataframe(stocks)
+    st.dataframe(stocks)
 
 st.divider()
 
