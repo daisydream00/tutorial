@@ -114,9 +114,11 @@ st.markdown("### :material/dataset: Data to use")
 
 with st.echo():
     import pandas as pd
+    
     medals_w = pd.read_csv(
     'https://raw.githubusercontent.com/daisydream00/tutorial/refs/heads/main/static/medals_w.csv', parse_dates=['year']
     ).query("country == 'China'")
+    
     st.write(medals_w)
     
 
