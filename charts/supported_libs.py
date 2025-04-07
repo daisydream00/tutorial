@@ -88,7 +88,7 @@ st.markdown("### :material/list_alt: [`st.altair_chart()`](https://docs.streamli
 
 st.markdown("""<br/>
 
-[Altair](https://altair-viz.github.io/) is another popular Python library for interactive visualization. It uses a declarative grammer, which allows us to describe the intended chart outcome from different aspects (e.g., chart, mark, encodings, etc.) rather than force us to manually programming every step.
+[Altair](https://altair-viz.github.io/) is another popular Python library for interactive visualizations. It leverages a declarative grammar, enabling users to describe the desired chart outcome by specifying its components (e.g., chart type, marks, encodings, etc.) rather than programming each step manually.
             
 We can port any Altair charts into our streamlit apps using `st.altair_chart()`.
 """, unsafe_allow_html=True)
@@ -116,7 +116,7 @@ c = (alt.Chart(gapminder)
      .properties(width=800, height=500).transform_filter(x_select).add_params(x_select)
 )
 
-st.altair_chart(c, use_container_width=False)
+st.altair_chart(c)
 """
 
 
@@ -132,8 +132,7 @@ with st.container(border=True):
     x_select = alt.selection_point(name="x_select", fields=['year'], bind=x_slider, value=1952)
     # Scales map a data domain (input range) to a visual range (output range)
     # without Detail, country information won't be displayed in the tooltip
-    c = (
-    alt.Chart(gapminder)
+    c = (alt.Chart(gapminder)
     .mark_circle()
     .encode(x=alt.X("gdpPercap", title='GDP Per Capita').scale(type="log", domain=[100, 100000]), 
             y=alt.Y("lifeExp", title='Life Expectancy').scale(domain=[25, 90]).axis(values=list(range(30, 91, 10))), 
@@ -144,4 +143,4 @@ with st.container(border=True):
             ).properties(width=800, height=500).transform_filter(x_select).add_params(x_select)
     )
 
-    st.altair_chart(c, use_container_width=False)
+    st.altair_chart(c)
