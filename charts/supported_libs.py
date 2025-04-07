@@ -18,22 +18,15 @@ As we've seen, Streamlit built-in charting functions can be useful if we want to
 
 In production, more powerful libraries, such as Matplotlib, Seaborn, Plotly, and Altair, can give us the flexibility and customizability we want. 
 
-Streamlit supports 6 popular Python visualization libraries. The rest of this section will provide a walk-through of Plotly and Altair for interactive plotting.
+Streamlit supports six popular Python visualization libraries. The rest of this section will provide a walk-through of Plotly and Altair for interactive plotting.
 """)
 
 st.markdown("### :material/dataset: Data to use")
 
-code = """
-import pandas as pd
-
-gapminder = pd.read_csv("https://raw.githubusercontent.com/plotly/datasets/master/gapminder-unclean.csv").dropna()
-"""
-
-st.code(code)
-
-gapminder = load_to_df("https://raw.githubusercontent.com/plotly/datasets/master/gapminder-unclean.csv").dropna()
-
-st.write(gapminder)
+with st.echo():
+    import pandas as pd
+    gapminder = pd.read_csv("https://raw.githubusercontent.com/plotly/datasets/master/gapminder-unclean.csv").dropna()
+    st.write(gapminder)
 
 st.divider()
 
