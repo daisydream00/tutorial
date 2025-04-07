@@ -72,7 +72,7 @@ with st.container(border=True):
     with st.echo("below"):
         # default to an empty string
         txt_str = st.text_area("Text to analyze")
-st.markdown(f"The value of variable <code>name_str</code> is<br><code>'''{txt_str}'''</code><br>of <code>{type(txt_str)}</code>",
+st.markdown(f"The value of variable `name_str` is<br>`'''{txt_str}'''`<br>of `{type(txt_str)}`",
             unsafe_allow_html=True)
 with st.expander("Show documentation"):
     st.write(st.text_area.__doc__)
