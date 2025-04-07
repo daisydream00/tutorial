@@ -31,7 +31,7 @@ medals = pd.read_csv(
 
 st.code(code)
 
-medals = load_to_df('https://raw.githubusercontent.com/justinjiajia/datafiles/main/medals.csv', 
+medals = load_to_df('https://github.com/daisydream00/tutorial/blob/main/static/medals.csv', 
                     parse_dates=['year']).query("country == 'China'")    
 
 
