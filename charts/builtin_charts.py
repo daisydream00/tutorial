@@ -311,7 +311,8 @@ with st.container(border=True):
 st.markdown("#### :material/map: :red[Rendered output]") 
 
 with st.container(border=True):
-    st.map(us_city_pop, latitude="lat", longitude="lon", size="pop", zoom=4)
+    with st.echo():
+        st.map(us_city_pop, latitude="lat", longitude="lon", size="pop", zoom=4)
 
 
 with st.expander("Show documentation"):
