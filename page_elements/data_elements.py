@@ -123,7 +123,7 @@ with st.container(border=True):
                            "in_progress": st.column_config.SelectboxColumn("In progress?")}
         )
 
-st.markdown("""This code dynamically list all the available column configurations in the st.column_config module that end with the word "Column". 
+st.markdown("""The code below dynamically lists all the available column configurations in the st.column_config module that end with the word "Column". 
 Check [here](https://docs.streamlit.io/develop/api-reference/data/st.column_config) for more information.
 """)
 
