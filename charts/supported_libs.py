@@ -6,8 +6,6 @@ import sys
 
 sys.path.append('..')
 
-from utils import load_to_df
-
 st.set_page_config(layout="wide")
 
 with open( "static/font.css" ) as css:
