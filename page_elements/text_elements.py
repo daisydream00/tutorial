@@ -181,6 +181,9 @@ st.divider()
 
 st.markdown("### :material/list_alt: [`st.divider()`](https://docs.streamlit.io/develop/api-reference/text/st.divider)")
 
+"""
+`st.divider()` helps you render a horizontal line in your app. 
+"""
 
 with st.container(border=True):
     with st.echo():
