@@ -123,5 +123,9 @@ with st.container(border=True):
                            "in_progress": st.column_config.SelectboxColumn("In progress?")}
         )
 
+st.markdown("""The dynamically list all the available column configurations in the st.column_config module that end with the word "Column". 
+""")
 
-st.write([col for col in dir(st.column_config) if col.endswith("Column")])
+with st.container(border=True):
+    with st.echo():
+        st.write([col for col in dir(st.column_config) if col.endswith("Column")])
