@@ -38,8 +38,7 @@ with st.container(border=True):
             ["Comedy", "Drama", "Documentary"]
         )
         
-st.markdown(f"The value of variable <code>genre_str</code> is <code>'{genre_str}'</code> of <code>{type(genre_str)}</code>.",
-            unsafe_allow_html=True)
+st.markdown(f"The value of variable `genre_str` is `'{genre_str}'` of `{type(genre_str)}`.")
 with st.expander("Show documentation"):
     st.write(st.radio.__doc__)
 
