@@ -21,8 +21,7 @@ with st.container(border=True):
             ("Email", "Home phone", "Mobile phone")
         )
 
-st.markdown(f"The value of variable `contact_str` is `'{contact_str}'` of <code>{type(contact_str)}</code>.",
-            unsafe_allow_html=True)
+st.markdown(f"The value of variable `contact_str` is `'{contact_str}'` of `{type(contact_str)}`.")
 with st.expander("Show documentation"):
     st.write(st.selectbox.__doc__)
 st.divider()
