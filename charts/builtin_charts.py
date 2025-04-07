@@ -1,5 +1,4 @@
 import streamlit as st
-import pandas as pd
 import sys
 
 sys.path.append('..')
@@ -19,19 +18,14 @@ They all work similarly by aligning variables with desired aesthetics.
 
 st.markdown("### :material/dataset: Data to use")
 
-code = """
-medals = pd.read_csv(
-    'https://raw.githubusercontent.com/daisydream00/tutorial/refs/heads/main/static/medals.csv', parse_dates=['year']
-    ).query("country == 'China'")
-"""
+with st.echo():
+    import pandas as pd
 
-st.code(code)
-
-medals = pd.read_csv(
-    'https://raw.githubusercontent.com/daisydream00/tutorial/refs/heads/main/static/medals.csv', parse_dates=['year']
-    ).query("country == 'China'")
-
-st.write(medals)
+    medals = pd.read_csv(
+        'https://raw.githubusercontent.com/daisydream00/tutorial/refs/heads/main/static/medals.csv', parse_dates=['year']
+        ).query("country == 'China'")
+    
+    st.write(medals)
 
 st.divider()
 
