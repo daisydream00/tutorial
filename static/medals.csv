@@ -1,0 +1,73 @@
+year,country,total,type,city
+2024,China,40,Gold,Paris
+2024,China,27,Silver,Paris
+2024,China,24,Bronze,Paris
+2024,United States,40,Gold,Paris
+2024,United States,44,Silver,Paris
+2024,United States,41,Bronze,Paris
+2020,China,38,Gold,Tokyo
+2020,China,32,Silver,Tokyo
+2020,China,19,Bronze,Tokyo
+2020,United States,39,Gold,Tokyo
+2020,United States,41,Silver,Tokyo
+2020,United States,33,Bronze,Tokyo
+2016,China,26,Gold,Rio de Janeiro
+2016,China,18,Silver,Rio de Janeiro
+2016,China,26,Bronze,Rio de Janeiro
+2016,Russia,19,Gold,Rio de Janeiro
+2016,Russia,17,Silver,Rio de Janeiro
+2016,Russia,20,Bronze,Rio de Janeiro
+2016,United States,46,Gold,Rio de Janeiro
+2016,United States,37,Silver,Rio de Janeiro
+2016,United States,38,Bronze,Rio de Janeiro
+2012,China,39,Gold,London
+2012,China,31,Silver,London
+2012,China,22,Bronze,London
+2012,Russia,18,Gold,London
+2012,Russia,21,Silver,London
+2012,Russia,26,Bronze,London
+2012,United States,48,Gold,London
+2012,United States,26,Silver,London
+2012,United States,30,Bronze,London
+2008,China,48,Gold,Beijing
+2008,China,22,Silver,Beijing
+2008,China,30,Bronze,Beijing
+2008,Russia,24,Gold,Beijing
+2008,Russia,13,Silver,Beijing
+2008,Russia,23,Bronze,Beijing
+2008,United States,36,Gold,Beijing
+2008,United States,39,Silver,Beijing
+2008,United States,37,Bronze,Beijing
+2004,China,32,Gold,Athens
+2004,China,17,Silver,Athens
+2004,China,14,Bronze,Athens
+2004,Russia,28,Gold,Athens
+2004,Russia,26,Silver,Athens
+2004,Russia,36,Bronze,Athens
+2004,United States,36,Gold,Athens
+2004,United States,39,Silver,Athens
+2004,United States,26,Bronze,Athens
+2000,China,28,Gold,Sydney
+2000,China,16,Silver,Sydney
+2000,China,14,Bronze,Sydney
+2000,Russia,32,Gold,Sydney
+2000,Russia,28,Silver,Sydney
+2000,Russia,29,Bronze,Sydney
+2000,United States,37,Gold,Sydney
+2000,United States,24,Silver,Sydney
+2000,United States,32,Bronze,Sydney
+1996,China,16,Gold,Atlanta
+1996,China,22,Silver,Atlanta
+1996,China,12,Bronze,Atlanta
+1996,Russia,26,Gold,Atlanta
+1996,Russia,21,Silver,Atlanta
+1996,Russia,16,Bronze,Atlanta
+1996,United States,44,Gold,Atlanta
+1996,United States,32,Silver,Atlanta
+1996,United States,25,Bronze,Atlanta
+1992,China,16,Gold,Barcelona
+1992,China,22,Silver,Barcelona
+1992,China,16,Bronze,Barcelona
+1992,United States,37,Gold,Barcelona
+1992,United States,34,Silver,Barcelona
+1992,United States,37,Bronze,Barcelona
