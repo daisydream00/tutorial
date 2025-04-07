@@ -52,9 +52,8 @@ st.markdown("<br/>", unsafe_allow_html=True)
 with st.container(border=True):
     with st.echo("below"):
     # default to an empty string
-        name_str = st.text_input("Entuer your username")
-st.markdown(f"The value of variable <code>name_str</code> is <code>'{name_str}'</code> of <code>{type(name_str)}</code>.",
-            unsafe_allow_html=True)
+        name_str = st.text_input("Enter your username")
+st.markdown(f"The value of variable `name_str`> is `'{name_str}'` of `{type(name_str)}`.")
 
 
 st.info("Simply typing inside the widget won't rerun its widget function to return a new value. An update is triggered either by clicking or tabbing out of the widget or by pressing `Enter`.", 
