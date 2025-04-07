@@ -54,7 +54,7 @@ with st.container(border=True):
     year = 2005
     chart_data = stocks.query(f"date < {year + 2} and date >= {year} and symbol in {symbols}")
     
-    st.markdown(f"### Stock prices in {year}<br>", unsafe_allow_html=True)
+    st.markdown(f"### Stock prices in {year} and {year+1}<br>", unsafe_allow_html=True)
     st.line_chart(chart_data, x="date", y="price", color="symbol", 
-                    width=800, height=500, use_container_width=False)
+                    width=800, height=500)
 
