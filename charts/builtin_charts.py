@@ -25,13 +25,13 @@ code = """
 import pandas as pd
 
 medals = pd.read_csv(
-    'https://github.com/daisydream00/tutorial/blob/main/static/medals.csv', parse_dates=['year']
+    'https://raw.githubusercontent.com/daisydream00/tutorial/refs/heads/main/static/medals.csv', parse_dates=['year']
     ).query("country == 'China'")
 """
 
 st.code(code)
 
-medals = load_to_df('https://github.com/daisydream00/tutorial/blob/main/static/medals.csv', 
+medals = load_to_df('https://raw.githubusercontent.com/daisydream00/tutorial/refs/heads/main/static/medals.csv', 
                     parse_dates=['year']).query("country == 'China'")    
 
 
