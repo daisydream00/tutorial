@@ -31,7 +31,7 @@ def render_selectbox(index):
         contact_str = st.selectbox(
             "How would you like to be contacted?",
             ("Email", "Home phone", "Mobile phone"),
-            index=index
+            index = index
         )
 
 def render_radio(index):
@@ -41,14 +41,14 @@ def render_radio(index):
          ["Comedy", "Drama", "Documentary"],
          index={index})""")   
         st.divider()
-        st.session_state.radio = radio_dict[index]
+        # st.session_state.radio = radio_dict[index]
 
         st.write("##### :red[Widget rendered upon initial load:]")
 
         st.radio(
             "What's your favorite movie genre?",
             ["Comedy", "Drama", "Documentary"],
-            key="radio"
+            index = index
         )
 
 col1, col2 = st.columns(2)
