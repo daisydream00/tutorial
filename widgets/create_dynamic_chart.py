@@ -66,5 +66,5 @@ with st.container(border=True):
     else:
         st.markdown(f"### Stock prices in {year}<br>", unsafe_allow_html=True)
         st.line_chart(chart_data, x="date", y="price", color="symbol", 
-                      width=720, height=500, use_container_width=False)
+                      width=720, height=500)
 
