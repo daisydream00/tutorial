@@ -23,7 +23,7 @@ def render_selectbox(index):
              ("Email", "Home phone", "Mobile phone"),
              index={index})""")   
         st.divider()
-        st.session_state.selectbox = selectbox_dict[index]
+        # st.session_state.selectbox = selectbox_dict[index]
 
         st.write("##### :red[Widget rendered upon initial load:]")
 
