@@ -6,14 +6,12 @@ st.set_page_config(layout="wide")
 with open( "static/font.css" ) as css:
     st.markdown( f'<style>{css.read()}</style>' , unsafe_allow_html= True)
 
-st.markdown("Default values are configurable for all widgets with a few special exceptions like <code>st.button</code> and <code>st.file_uploader</code>.", 
-            unsafe_allow_html=True)
+st.markdown("Default values are configurable for all widgets with a few special exceptions like `st.button` and `st.file_uploader`.")
 
-st.markdown("The defaults of selectbox widgets and radio button widgets can be set via their widget functions' <code>index</code> argument:", 
-            unsafe_allow_html=True)
+st.markdown("The defaults of selectbox widgets and radio button widgets can be set via their widget functions' `index` argument:")
 
 
-st.markdown("##### Set the <code>index</code> argument:", unsafe_allow_html=True)
+st.markdown("##### Set the `index` argument:")
 option_index = st.number_input("Set the index argument:", min_value=0, max_value=2, value=None, label_visibility="collapsed")
 selectbox_dict = {0: "Email", 1: "Home phone", 2: "Mobile phone", None: None}
 radio_dict = {0: "Comedy", 1: "Drama", 2: "Documentary", None: None}
@@ -33,7 +31,7 @@ def render_selectbox(index):
         contact_str = st.selectbox(
             "How would you like to be contacted?",
             ("Email", "Home phone", "Mobile phone"),
-            key="selectbox"
+            index=index
         )
 
 def render_radio(index):
