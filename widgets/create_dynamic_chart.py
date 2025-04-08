@@ -16,24 +16,17 @@ st.markdown("## 🎯 Dynamic charting for stock price comparison")
             
 st.markdown("### :material/dataset: Data to use")
 
-code = """
-import pandas as pd
+with st.echo():
+    import pandas as pd
+    
+    source = pd.read_csv(
+        "https://raw.githubusercontent.com/vega/vega-datasets/main/data/stocks.csv", 
+        parse_dates=['date'], date_format="%b %d %Y"
+        ).query(f"date < 2010 and date >= 2005")
+    
+    stocks = ['AAPL', 'AMZN', 'GOOG', 'IBM', 'MSFT']
 
-source = pd.read_csv(
-    "https://raw.githubusercontent.com/vega/vega-datasets/main/data/stocks.csv", 
-    parse_dates=['date'], date_format="%b %d %Y"
-    ).query(f"date < 2010 and date >= 2005")
-
-stocks = ['AAPL', 'AMZN', 'GOOG', 'IBM', 'MSFT']
-"""
-
-st.code(code)
-
-source = load_to_df(
-    "https://raw.githubusercontent.com/vega/vega-datasets/main/data/stocks.csv", 
-    parse_dates=['date'], date_format="%b %d %Y"
-    ).query(f"date < 2010 and date >= 2005")
-st.dataframe(source)
+    st.dataframe(source)
 
 st.divider()
 
