@@ -58,11 +58,11 @@ layouts_pages = [sidebar, columns, containers, chat_UI, tabs]
 
 pg = st.navigation({"⚙️Setup": setup_pages,
                     "📑Page elements": elements_pages, 
-                    "📊Charts": charts_pages, 
+                    "📊Charts": charts_pages,
+                    "📰Layouts": layouts_pages, 
                     "📱Widgets": widgets_pages,
                     "🕓Sessions": sessions_pages, 
                     "🗃️Caching":  caching_pages,
-                    "📰Layouts": layouts_pages, 
                     "Test": [test]})
 
 pg.run()
