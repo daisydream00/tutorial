@@ -105,18 +105,6 @@ st.markdown("""
 
 st.divider()
 
-st.markdown("""
-
-### Access the source code
-            
-If you have a GitHub account, you can fork this [repository](https://github.com/daisydream00/tutorial), which contains all source code for this tutorial website.
-            
-    
-"""
-)   
-
-st.divider()
-
 
 
 st.markdown("""
