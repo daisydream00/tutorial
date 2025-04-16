@@ -76,7 +76,7 @@ with st.echo():
     import pandas as pd
 
     random.seed(125)
-    df["views_history"] = [[random.randint(0, 5000) for _ in range(30)] for _ in range(3)]
+    df["views_history"] = [[random.randint(0, 5000) for i in range(30)] for i in range(3)]
     
     st.dataframe(df)
 
