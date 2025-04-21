@@ -7,7 +7,7 @@ with open( "static/font.css" ) as css:
 
 st.markdown("""## Data visualization
 
-Visualization is a fundamental tool for the modern data scientist. It is often the central lens used
+Visualization is a fundamental tool for the modern data scientists. It is often the central lens used
 to understand items such as statistical models (for example, via an AUC chart), the distribution
 of a crucial variable (via a histogram), or even important business metrics.
                             
