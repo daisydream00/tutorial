@@ -49,14 +49,12 @@ code = """
 # to run this snippet on your computer, you need to first install Plotly using pip install plotly
 import plotly.express as px
 
-fig = px.scatter(gapminder, x="gdpPercap", y="lifeExp", size="pop", color='continent', hover_data="country",
+fig = px.scatter(gapminder, x="gdpPercap", y="lifeExp", size="pop", color='continent',
                  log_x=True, range_x=[100, 100000], range_y=[25, 90], size_max=55,
                  color_discrete_sequence=px.colors.qualitative.Set1,
-                 category_orders={"continent": ["Asia", "Africa", "Americas", "Oceania", "Europe"]},
                  labels={'gdpPercap': 'GDP Per Capita', 'lifeExp': 'Life Expectancy', "continent": "Continent"},
                  animation_frame="year", animation_group="country",
                  width=800, height=500)
-fig.update_layout(legend=dict(yanchor="top", y=0.99, xanchor="left", x=0.01))
 st.plotly_chart(fig)
 """
 
@@ -69,13 +67,13 @@ st.markdown("#### :material/animation: :red[Rendered output]")
 
 with st.container(border=True):
     # https://plotly.com/python/discrete-color/
-    fig = px.scatter(gapminder, x="gdpPercap", y="lifeExp", size="pop", color='continent', hover_data="country",
-                    log_x=True, range_x=[100, 100000], range_y=[25, 90], size_max=55,
-                    color_discrete_sequence=px.colors.qualitative.Set1,
-                    category_orders={"continent": ["Asia", "Africa", "Americas", "Oceania", "Europe"]},
-                    labels={'gdpPercap': 'GDP Per Capita', 'lifeExp': 'Life Expectancy', "continent": "Continent"},
-                   animation_frame="year", animation_group="country", width=800, height=500)
-    fig.update_layout(legend=dict(yanchor="top", y=0.99, xanchor="left", x=0.01))
+    fig = px.scatter(gapminder, x="gdpPercap", y="lifeExp", size="pop", color='continent',
+                     log_x=True, range_x=[100, 100000], range_y=[25, 90], size_max=55,
+                     color_discrete_sequence=px.colors.qualitative.Set1,
+                     labels={'gdpPercap': 'GDP Per Capita', 'lifeExp': 'Life Expectancy', "continent": "Continent"},
+                     animation_frame="year", animation_group="country",
+                     width=800, height=500)
+    #fig.update_layout(legend=dict(yanchor="top", y=0.99, xanchor="left", x=0.01))
     st.plotly_chart(fig)
 
 
