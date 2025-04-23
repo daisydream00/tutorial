@@ -15,10 +15,10 @@ st.markdown("""`st.tabs()` is a function that creates tabbed sections in your ap
 
 
 
-st.markdown("""Calling the `st.columns()` function returns a list of column objects.
+st.markdown("""Calling the `st.tabs()` function returns a list of tab objects.
 
 
-To add elements to the returned container, we can use the `with` statement (preferred) or just call methods directly on the returned object..""")
+To add elements to the returned tabs, we can use the `with` statement (preferred) or just call methods directly on the returned object.""")
 
 
 
