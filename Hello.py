@@ -10,7 +10,7 @@ media_elements = st.Page("page_elements/media_elements.py", title="Media element
 visual_intro = st.Page("charts/visual_intro.py", title="Introduction to data visualization")
 builtin_charts = st.Page("charts/builtin_charts.py", title="Built-in charting functions")
 create_charts = st.Page("charts/create_charts.py", title="🎯Create charts")
-supported_libs = st.Page("charts/supported_libs.py", title="🚀Optional: Using external libraries")
+supported_libs = st.Page("charts/supported_libs.py", title="🚀Using external libraries")
 
 widget_types = st.Page("widgets/widget_types.py", title="Types of widgets")
 create_dynamic_chart = st.Page("widgets/create_dynamic_chart.py", title="🎯Create dynamic chart")
