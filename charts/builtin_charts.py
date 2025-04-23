@@ -301,8 +301,8 @@ st.markdown("#### :material/code_blocks: :blue[Source code to run]")
 
 
 code = """
-us_city_pop["pop"] = us_city_pop["pop"] / 20
-st.map(us_city_pop, latitude="lat", longitude="lon", size="pop", zoom=3)
+us_city_pop["pop_scaled"] = us_city_pop["pop"] / 20
+st.map(us_city_pop, latitude="lat", longitude="lon", size="pop_scaled", zoom=3)
 """
 
 with st.container(border=True):
@@ -311,8 +311,8 @@ with st.container(border=True):
 st.markdown("#### :material/map: :red[Rendered output]") 
 
 with st.container(border=True):
-    us_city_pop["pop"] = us_city_pop["pop"] / 20
-    st.map(us_city_pop, latitude="lat", longitude="lon", size="pop", zoom=3)
+    us_city_pop["pop_scaled"] = us_city_pop["pop"] / 20
+    st.map(us_city_pop, latitude="lat", longitude="lon", size="pop_scaled", zoom=3)
 
 
 with st.expander("Show documentation"):
