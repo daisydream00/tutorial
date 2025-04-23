@@ -7,7 +7,7 @@ st.set_page_config(layout="wide")
 with open( "static/font.css" ) as css:
     st.markdown( f'<style>{css.read()}</style>' , unsafe_allow_html= True)
     
-st.markdown("""`st.container` allows us to inserts an invisible container into our app that can hold multiple elements.
+st.markdown("""`st.tabs()` is a function that creates tabbed sections in your app, allowing you to organize content into separate panels that users can switch between.
 
 <img src="https://docs.streamlit.io/images/api/tabs.jpg" width=400/>
 <br> <br>""", unsafe_allow_html=True)
