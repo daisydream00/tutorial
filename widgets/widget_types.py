@@ -74,12 +74,15 @@ with st.container(border=True):
         txt_str = st.text_area("Text to analyze")
 st.markdown(f"The value of variable `name_str` is<br>`'''{txt_str}'''`<br>of `{type(txt_str)}`",
             unsafe_allow_html=True)
+
+st.info("Simply typing inside the widget won't rerun the widget function to return a new value. An update is triggered either by clicking or tabbing out of the widget or by pressing `Ctrl+Enter`.",
+        icon="🚨")
+
 with st.expander("Show documentation"):
     st.write(st.text_area.__doc__)
 
 
-st.info("Simply typing inside the widget won't rerun the widget function to return a new value. An update is triggered either by clicking or tabbing out of the widget or by pressing `Ctrl+Enter`.",
-        icon="🚨")
+
 
 
 st.divider()
