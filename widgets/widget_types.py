@@ -144,7 +144,7 @@ with st.container(border=True):
     with st.echo("below"):
         # default to the minimum value
         slider_float_range = st.slider(
-            'Choose a value', min_value=10.0, max_value=50.0,
+            'Choose two values', min_value=10.0, max_value=50.0,
             value=(10.0, 20.0)
         )
 st.markdown(f"The value of variable `slider_float_range` is `{slider_float_range}` of `{type(slider_float_range)}`.")
@@ -153,7 +153,7 @@ with st.container(border=True):
     with st.echo("below"):
         # default to the minimum value
         slider_int_range = st.slider(
-            'Choose a value', min_value=10, max_value=50, 
+            'Choose two values', min_value=10, max_value=50, 
             value=[30, 40]
         )
 st.markdown(f"The value of variable `slider_int_range` is `{slider_int_range}` of `{type(slider_int_range)}`.")
