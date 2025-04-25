@@ -53,15 +53,15 @@ widgets_pages = [widget_types, create_dynamic_chart, defaults, button, keys, val
                  show_hide_message, display_image, advanced_todo_list, forms, cleanup]
 sessions_pages = [sessions, check_state_item, count_reruns, create_todo_list]
 caching_pages = [caching_intro, data_caching, resource_caching]
-layouts_pages = [sidebar, columns, containers, tabs]
-#layouts_pages = [sidebar, columns, containers, chat_UI, tabs]
+#layouts_pages = [sidebar, columns, containers, tabs]
+layouts_pages = [sidebar, columns, containers, chat_UI, tabs]
 
 
 pg = st.navigation({"⚙️Setup": setup_pages,
                     "📑Page elements": elements_pages, 
                     "📊Charts": charts_pages,
-                    "📰Layouts": layouts_pages, 
                     "📱Widgets": widgets_pages,
+                    "📰Layouts": layouts_pages, 
                     "🕓Sessions": sessions_pages, 
                     "🗃️Caching":  caching_pages,
                     "Test": [test]})
