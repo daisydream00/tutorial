@@ -30,7 +30,7 @@ st.divider()
 
 st.markdown("""### :material/description:  Requirements
 
-- Include a multiselect widget (`st.multiselect()`) to choose which stocks should be included for plotting; the default values are 'AMZN' and 'AAPL'.
+- Include a multiselect widget (`st.multiselect()`) to choose which stocks should be included for plotting; the default values are `'AMZN'` and `'AAPL'`.
  
 - Include a slider widget (`st.slider()`) to indicate a specific year over which stocks are compared;
 
