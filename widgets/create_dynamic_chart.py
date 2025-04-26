@@ -30,7 +30,7 @@ st.markdown("""### :material/description:  Requirements
 
 - Include a multiselect widget (`st.multiselect()`) to choose which stocks should be included for plotting; the default values are `'AMZN'` and `'AAPL'`.
  
-- Include a slider widget (`st.slider()`) to indicate a specific year over which stocks are compared; the range is 2005 - 2009.
+- Include a slider widget (`st.slider()`) to indicate a specific year over which stocks are compared; the range is 2005 - 2009; the default value is 2006.
 
 - Include a checkbox widget (`st.checkbox()`) to indicate if the user wants to compare stocks for the whole period. The slider widget should be disabled when this widget is checked.
 
@@ -51,7 +51,7 @@ st.markdown("#### :material/widgets: :red[Expected output]")
 with st.container(border=True):
     stocks = st.multiselect("Select stocks for comparison", source.symbol.unique(), ['AMZN', 'AAPL'])
     all_years = st.checkbox("Show prices for the whole period")
-    year = st.slider("Select a year", 2005, 2009, disabled=all_years)
+    year = st.slider("Select a year", min_value=2005, max_value=2009, value=2006, disabled=all_years)
  
 
     if not stocks:
