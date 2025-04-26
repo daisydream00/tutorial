@@ -21,8 +21,6 @@ with st.echo():
         "https://raw.githubusercontent.com/vega/vega-datasets/main/data/stocks.csv", 
         parse_dates=['date'], date_format="%b %d %Y"
         ).query(f"date < 2010 and date >= 2005")
-    
-    stocks = ['AAPL', 'AMZN', 'GOOG', 'IBM', 'MSFT']
 
     st.dataframe(source)
 
@@ -40,6 +38,7 @@ st.markdown("""### :material/description:  Requirements
             
 - Tips:
     - Recall how `st.line_chart()` allows us to align variables with desired aesthetics;
+    - Use the `.unique()` method to obtain the unique values of `symbol` column in the dataframe;
     - [`DataFrame.query()`](https://pandas.pydata.org/docs/user_guide/indexing.html#the-query-method) can be used to filter data for plotting, 
         - e.g., if your variable that holds the selected stocks is called `stocks` and that holds the specified year is called `year`, `.query(f"date < {year + 1} and date >= {year} and symbol in {stocks}")` will give you the desired subset.
     - Use the [`disabled`](https://docs.streamlit.io/develop/api-reference/widgets/st.slider) option of `st.slider()` to control when to disable the slider.
