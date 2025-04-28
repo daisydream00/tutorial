@@ -49,19 +49,21 @@ test = st.Page("test.py", title="Test")
 setup_pages = [setup]
 elements_pages = [text_elements, data_elements, media_elements]
 charts_pages = [ visual_intro, builtin_charts, create_charts, supported_libs]
-widgets_pages = [widget_types, defaults, create_dynamic_chart, button, keys, value_init, callbacks, 
+widgets_pages = [widget_types, defaults, create_dynamic_chart]
+widgets_advanced_pages = [button, keys, value_init, callbacks, 
                  show_hide_message, display_image, advanced_todo_list, forms, cleanup]
 sessions_pages = [sessions, check_state_item, count_reruns, create_todo_list]
 caching_pages = [caching_intro, data_caching, resource_caching]
-#layouts_pages = [sidebar, columns, containers, tabs]
-layouts_pages = [sidebar, columns, containers, chat_UI, tabs]
+layouts_pages = [sidebar, columns, containers, tabs]
+#layouts_pages = [sidebar, columns, containers, chat_UI, tabs]
 
 
 pg = st.navigation({"⚙️Setup": setup_pages,
                     "📑Page elements": elements_pages, 
                     "📊Charts": charts_pages,
                     "📱Widgets": widgets_pages,
-                    "📰Layouts": layouts_pages, 
+                    "📰Layouts": layouts_pages,
+                    "📱Widgets_Adanced": widgets_advanced_pages,
                     "🕓Sessions": sessions_pages, 
                     "🗃️Caching":  caching_pages,
                     "Test": [test]})
