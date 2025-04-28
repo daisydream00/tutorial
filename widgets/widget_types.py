@@ -235,11 +235,12 @@ st.markdown("### :material/list_alt: [`st.date_input()`](https://docs.streamlit.
 
 st.markdown("<br/>", unsafe_allow_html=True)
  
+from datetime import date
 
 with st.container(border=True):
     with st.echo("below"):
         # default to the current date
-        bd_date = st.date_input("When's your birthday?")
+        bd_date = st.date_input("When's your birthday?", value = date.today())
 st.markdown(f"The value of variable `bd_date` is `{bd_date}` of `{type(bd_date)}`.")
 with st.expander("Show documentation"):
     st.write(st.date_input.__doc__)
