@@ -219,11 +219,13 @@ st.markdown("### Widgets that return date/time values (Optional)")
 st.markdown("### :material/list_alt: [`st.time_input()`](https://docs.streamlit.io/develop/api-reference/widgets/st.time_input)")
 
 st.markdown("<br/>", unsafe_allow_html=True)
- 
+
+from datetime import datetime
+
 with st.container(border=True):
     with st.echo("below"):
         # default to the current time
-        t_time = st.time_input("Set an alarm for")
+        t_time = st.time_input("Set an alarm for", value = datetime.now(), step=60)
 st.markdown(f"The value of variable `t_time` is `{t_time}` of `{type(t_time)}`.")
 with st.expander("Show documentation"):
     st.write(st.time_input.__doc__)
