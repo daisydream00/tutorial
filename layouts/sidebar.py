@@ -11,7 +11,9 @@ st.markdown("Streamlit also provides ways for controlling how different elements
 source = pd.read_csv("https://raw.githubusercontent.com/vega/vega-datasets/main/data/stocks.csv", 
                      parse_dates=['date'], date_format="%b %d %Y")
 
-
+with st.expander("Show documentation"):
+    st.write(st.sidebar.__doc__)
+    
 st.markdown("""Each page can feature a sidebar implemented by `st.sidebar`. 
 Passing an element to `st.sidebar` positions it to the left of the main viewport, allowing users to focus on the content in our app.
             
