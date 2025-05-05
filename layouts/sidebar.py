@@ -21,8 +21,6 @@ We can organize page elements into a sidebar by
 1) Calling methods directly on `st.sidebar`;
 2) Wrapping element functions within `st.sidebar` using `with` notation.""", unsafe_allow_html=True)
 
-with st.expander("Show documentation"):
-    st.write(st.sidebar.__doc__)
 
 code = """import streamlit as st
 import pandas as pd
