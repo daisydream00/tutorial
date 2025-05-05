@@ -17,13 +17,12 @@ Passing an element to `st.sidebar` positions it to the left of the main viewport
 <img src="https://docs.streamlit.io/images/api/sidebar.jpg" width=400/>
 <br> <br>
 
-with st.expander("Show documentation"):
-    st.write(st.sidebar.__doc__)
-
 We can organize page elements into a sidebar by
 1) Calling methods directly on `st.sidebar`;
 2) Wrapping element functions within `st.sidebar` using `with` notation.""", unsafe_allow_html=True)
 
+with st.expander("Show documentation"):
+    st.write(st.sidebar.__doc__)
 
 code = """import streamlit as st
 import pandas as pd
