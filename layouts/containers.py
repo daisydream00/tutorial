@@ -90,7 +90,7 @@ row1 = st.columns(4)
 row2 = st.columns(4)
 
 for col in row1 + row2:
-    tile = col.container(height=60)
+    tile = col.container(border=True)
     tile.write(":dog:")
 
 
