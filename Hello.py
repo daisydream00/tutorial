@@ -66,7 +66,7 @@ pg = st.navigation({"⚙️Setup": setup_pages,
                     "📱Widgets_Adanced": widgets_advanced_pages,
                     "🕓Sessions": sessions_pages, 
                     "🗃️Caching":  caching_pages,
-                    "📋In-class exercise": [exercise]
+                    "📋In-class exercise": [exercise],
                     "Test": [test]})
 
 pg.run()
