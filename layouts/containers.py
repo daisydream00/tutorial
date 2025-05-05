@@ -10,12 +10,11 @@ st.markdown("""`st.container` allows us to inserts an invisible container into o
 
 <img src="https://docs.streamlit.io/images/api/container.jpg" width=400/>
 <br> <br>""", unsafe_allow_html=True)
- 
 
-
-
+with st.expander("Show documentation"):
+    st.write(st.container.__doc__)
+    
 st.markdown("""To add elements to the returned container, we can use the `with` statement (preferred) or just call methods directly on the returned object.""")
-
 
 
 st.markdown("#### :material/code_blocks: :blue[Source code to run]")
