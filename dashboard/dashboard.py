@@ -1,11 +1,10 @@
 import streamlit as st
 import pandas as pd
  
-
+# (1) scrape the tickers/symbols of S&P 100 companies from the [Wikipedia page](https://en.wikipedia.org/wiki/S%26P_100); and (2) 
 st.set_page_config(page_title="Stock Dashboard", layout="wide")
 st.markdown("""### :material/description:  Requirements
-- Please download `In-Class Exercise_5_part1.ipynb` from Canvas. Complete the code to 
-# (1) scrape the tickers/symbols of S&P 100 companies from the [Wikipedia page](https://en.wikipedia.org/wiki/S%26P_100); and (2) 
+- Please download `In-Class Exercise_5_part1.ipynb` from Canvas. Complete the code to scrape the tickers/symbols of S&P 100 companies from the [Wikipedia page](https://en.wikipedia.org/wiki/S%26P_100); and (2) 
 extract relevant info from the **`yfinance`** libarary to generate two files `ticker_info.csv` and `stock_data.csv` (The two data files are also available on Canvas if you want to start with the second part first). Place these two files into your streamlit project folder and complete
 this second part of this exercise, which is to set up a streamlit application.
             
