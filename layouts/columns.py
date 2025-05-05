@@ -12,12 +12,11 @@ st.markdown("""Streamlit `columns` are containers laid out as side-by-side colum
 <br> <br>""", unsafe_allow_html=True)
  
 
-
+with st.expander("Show documentation"):
+    st.write(st.columns.__doc__)
 
 st.markdown("""Calling the `st.columns()` function returns a list of column objects.
 
-with st.expander("Show documentation"):
-    st.write(st.columns.__doc__)
     
 To add elements to the returned columns, we can use the `with` statement (preferred) or just call methods directly on the returned object.""")
 
