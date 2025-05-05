@@ -1,0 +1,102 @@
+,Ticker,Company,Sector,Market Cap (B)
+0,AAPL,Apple Inc.,Technology,3067.07
+1,ABBV,AbbVie Inc.,Healthcare,351.09
+2,ABT,Abbott Laboratories,Healthcare,231.09
+3,ACN,Accenture plc,Technology,191.14
+4,ADBE,Adobe Inc.,Technology,162.33
+5,AIG,"American International Group, Inc.",Financial Services,48.56
+6,AMD,"Advanced Micro Devices, Inc.",Technology,160.51
+7,AMGN,Amgen Inc.,Healthcare,151.21
+8,AMT,American Tower Corporation,Real Estate,104.68
+9,AMZN,"Amazon.com, Inc.",Consumer Cyclical,2016.9
+10,AVGO,Broadcom Inc.,Technology,957.51
+11,AXP,American Express Company,Financial Services,193.96
+12,BA,The Boeing Company,Industrials,139.84
+13,BAC,Bank of America Corporation,Financial Services,309.33
+14,BK,The Bank of New York Mellon Corporation,Financial Services,58.77
+15,BKNG,Booking Holdings Inc.,Consumer Cyclical,169.3
+16,BLK,"BlackRock, Inc.",Financial Services,144.05
+17,BMY,Bristol-Myers Squibb Company,Healthcare,102.91
+18,BRK-B,Berkshire Hathaway Inc.,Financial Services,1164.34
+19,C,Citigroup Inc.,Financial Services,131.84
+20,CAT,Caterpillar Inc.,Industrials,152.23
+21,CHTR,"Charter Communications, Inc.",Communication Services,54.04
+22,CL,Colgate-Palmolive Company,Consumer Defensive,73.33
+23,CMCSA,Comcast Corporation,Communication Services,128.66
+24,COF,Capital One Financial Corporation,Financial Services,71.93
+25,COP,ConocoPhillips,Energy,115.56
+26,COST,Costco Wholesale Corporation,Consumer Defensive,447.37
+27,CRM,"Salesforce, Inc.",Technology,263.93
+28,CSCO,"Cisco Systems, Inc.",Technology,236.03
+29,CVS,CVS Health Corporation,Healthcare,85.16
+30,CVX,Chevron Corporation,Energy,241.92
+31,DE,Deere & Company,Industrials,130.73
+32,DHR,Danaher Corporation,Healthcare,142.45
+33,DIS,The Walt Disney Company,Communication Services,167.2
+34,DUK,Duke Energy Corporation,Utilities,94.47
+35,EMR,Emerson Electric Co.,Industrials,61.08
+36,FDX,FedEx Corporation,Industrials,52.64
+37,GD,General Dynamics Corporation,Industrials,73.28
+38,GE,GE Aerospace,Industrials,221.49
+39,GILD,"Gilead Sciences, Inc.",Healthcare,129.08
+40,GM,General Motors Company,Consumer Cyclical,43.55
+41,GOOG,Alphabet Inc.,Communication Services,2000.18
+42,GOOGL,Alphabet Inc.,Communication Services,2000.18
+43,GS,"The Goldman Sachs Group, Inc.",Financial Services,175.94
+44,HD,"The Home Depot, Inc.",Consumer Cyclical,362.31
+45,HON,Honeywell International Inc.,Industrials,137.74
+46,IBM,International Business Machines Corporation,Technology,228.21
+47,INTC,Intel Corporation,Technology,89.94
+48,INTU,Intuit Inc.,Technology,176.59
+49,ISRG,"Intuitive Surgical, Inc.",Healthcare,189.75
+50,JNJ,Johnson & Johnson,Healthcare,375.64
+51,JPM,JPMorgan Chase & Co.,Financial Services,701.75
+52,KO,The Coca-Cola Company,Consumer Defensive,308.4
+53,LIN,Linde plc,Basic Materials,214.16
+54,LLY,Eli Lilly and Company,Healthcare,739.6
+55,LMT,Lockheed Martin Corporation,Industrials,110.78
+56,LOW,"Lowe's Companies, Inc.",Consumer Cyclical,127.16
+57,MA,Mastercard Incorporated,Financial Services,508.02
+58,MCD,McDonald's Corporation,Consumer Cyclical,223.07
+59,MDLZ,"Mondelez International, Inc.",Consumer Defensive,87.72
+60,MDT,Medtronic plc,Healthcare,108.82
+61,MET,"MetLife, Inc.",Financial Services,52.23
+62,META,"Meta Platforms, Inc.",Communication Services,1507.15
+63,MMM,3M Company,Industrials,76.46
+64,MO,"Altria Group, Inc.",Consumer Defensive,100.41
+65,MRK,"Merck & Co., Inc.",Healthcare,209.31
+66,MS,Morgan Stanley,Financial Services,193.19
+67,MSFT,Microsoft Corporation,Technology,3235.24
+68,NEE,"NextEra Energy, Inc.",Utilities,138.11
+69,NFLX,"Netflix, Inc.",Communication Services,492.17
+70,NKE,"NIKE, Inc.",Consumer Cyclical,86.48
+71,NOW,"ServiceNow, Inc.",Technology,202.29
+72,NVDA,NVIDIA Corporation,Technology,2793.8
+73,ORCL,Oracle Corporation,Technology,422.68
+74,PEP,"PepsiCo, Inc.",Consumer Defensive,183.38
+75,PFE,Pfizer Inc.,Healthcare,137.25
+76,PG,The Procter & Gamble Company,Consumer Defensive,376.35
+77,PLTR,Palantir Technologies Inc.,Technology,293.26
+78,PM,Philip Morris International Inc.,Consumer Defensive,265.95
+79,PYPL,"PayPal Holdings, Inc.",Financial Services,65.4
+80,QCOM,QUALCOMM Incorporated,Technology,153.51
+81,RTX,RTX Corporation,Industrials,173.95
+82,SBUX,Starbucks Corporation,Consumer Cyclical,96.24
+83,SCHW,The Charles Schwab Corporation,Financial Services,150.92
+84,SO,The Southern Company,Utilities,100.17
+85,SPG,"Simon Property Group, Inc.",Real Estate,60.98
+86,T,AT&T Inc.,Communication Services,198.67
+87,TGT,Target Corporation,Consumer Defensive,44.24
+88,TMO,Thermo Fisher Scientific Inc.,Healthcare,159.89
+89,TMUS,"T-Mobile US, Inc.",Communication Services,282.59
+90,TSLA,"Tesla, Inc.",Consumer Cyclical,925.09
+91,TXN,Texas Instruments Incorporated,Technology,149.45
+92,UNH,UnitedHealth Group Incorporated,Healthcare,364.02
+93,UNP,Union Pacific Corporation,Industrials,130.42
+94,UPS,"United Parcel Service, Inc.",Industrials,81.7
+95,USB,U.S. Bancorp,Financial Services,64.69
+96,V,Visa Inc.,Financial Services,666.22
+97,VZ,Verizon Communications Inc.,Communication Services,184.42
+98,WFC,Wells Fargo & Company,Financial Services,240.16
+99,WMT,Walmart Inc.,Consumer Defensive,790.09
+100,XOM,Exxon Mobil Corporation,Energy,457.77
