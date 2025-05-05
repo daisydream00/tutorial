@@ -7,7 +7,7 @@ st.markdown("""### :material/description:  Requirements
 - Please download `In-Class Exercise_5_part1.ipynb` from Canvas. Complete the code to extract relevant info from the **`yfinance`** libarary to generate two files `ticker_info.csv` and `stock_data.csv` (The two data files are also available on Canvas if you want to start with the second part first). Place these two files into your streamlit project folder and complete
 this second part of this exercise, which is to set up a streamlit application.
             
-- Include a sidebar (`with st.`sidebar`) that contains the following widgets:
+- Include a sidebar (`with st.sidebar`) that contains the following widgets:
     - A checkbox widget (`st.checkbox()`) that alows the user to control whether to show a bar chart that visualizes the market cap of S&P 100 stocks by sector; the default value is checked.
     - A multiselect widget (`st.multiselect()`) that allows the user to choose which stocks should be included for plotting; the options are S&P 100 tickers; the default values are `'TSLA'`, `'NVDA'`, and `'AAPL'`.
     - A slider widget (`st.slider()`) that allows the user to specify the year range over which stocks are compared; the range is 2020 - 2025; the default value is 2004 - 2025.
