@@ -63,8 +63,8 @@ with st.container(border=True):
             | Element |    Markdown Syntax    |
             |-------- |-----------------------|
             | Heading | # H1 ; ## H2 ; ### H3 |
-            | Bold    | **bold text**        |
-            | Italic  | *italicized text*    |
+            | Bold    | \**bold text**        |
+            | Italic  | \*italicized text*    |
 
             > Check out [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/) for a quick reference. 
         """
