@@ -57,14 +57,14 @@ with st.container(border=True):
 
 with st.container(border=True):
     with st.echo():
-        passage = r"""
+        passage = """
             #### Markdown Examples
 
-            | Element |    Markdown Syntax    |
-            |-------- |-----------------------|
-            | Heading | # H1 ; ## H2 ; ### H3 |
-            | Bold    | \**bold text**        |
-            | Italic  | \*italicized text*    |
+            | Element |    Markdown Syntax     |
+            |-------- |------------------------|
+            | Heading | `# H1`;`## H2`;`### H3`|
+            | Bold    | `**bold text**`        |
+            | Italic  | `*italicized text*`    |
 
             > Check out [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/) for a quick reference. 
         """
