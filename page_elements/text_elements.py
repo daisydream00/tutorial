@@ -57,14 +57,14 @@ with st.container(border=True):
 
 with st.container(border=True):
     with st.echo():
-        passage = """
+        passage = r"""
             #### Markdown Examples
 
             | Element |    Markdown Syntax    |
             |-------- |-----------------------|
             | Heading | # H1 ; ## H2 ; ### H3 |
-            | Bold    | \**bold text**        |
-            | Italic  | \*italicized text*    |
+            | Bold    | **bold text**        |
+            | Italic  | *italicized text*    |
 
             > Check out [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/) for a quick reference. 
         """
@@ -110,7 +110,7 @@ with st.container(border=True):
 with st.container(border=True):
     with st.echo():
         st.markdown("<a href='www.ust.hk'>HKUST</a><br/><br/>"
-                    "<img src='https://brand.hkust.edu.hk/sites/default/files/2023-07/files/images/HKUST-Logo-Icon.svg'/>"
+                    "<img src='https://geco.hkust.edu.hk/sites/default/files/images/School-of-Business-and-Management.png'  width='200'/>"
                     "<hr/>ISOM Department",
                     unsafe_allow_html=True)  
 
