@@ -123,7 +123,7 @@ with st.container(border=True):
                            "views_history": st.column_config.LineChartColumn("Views", y_min=0, y_max=5000)}
         )
 
-st.markdown("""The code below dynamically lists all the available column configurations in the st.column_config module that end with the word "Column". 
+st.markdown("""The code below dynamically lists all the available column configurations in the `st.column_config` module that end with the word "Column". 
 Check [here](https://docs.streamlit.io/develop/api-reference/data/st.column_config) for more information.
 """)
 
