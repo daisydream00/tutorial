@@ -48,7 +48,7 @@ resource_caching =  st.Page("caching/resource_caching.py", title="Resource cachi
 test = st.Page("test.py", title="Test")
 
 setup_pages = [setup]
-elements_pages = [text_elements, data_elements, media_elements, create_profiel]
+elements_pages = [text_elements, data_elements, media_elements, create_profile]
 charts_pages = [ visual_intro, builtin_charts, create_charts, supported_libs]
 widgets_pages = [widget_types, defaults, create_dynamic_chart]
 widgets_advanced_pages = [button, keys, value_init, callbacks, 
