@@ -70,6 +70,8 @@ with st.container(border=True):
         """
         st.markdown(passage)
 
+"""###### Can show bullet points"""
+
 with st.container(border=True):
     with st.echo():
         st.markdown("""
