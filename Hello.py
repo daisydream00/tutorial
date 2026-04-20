@@ -1,5 +1,6 @@
 import streamlit as st
 
+intro = st.Page("intro/intro.py", title="Introduction")
 
 setup = st.Page("setup/setup.py", title="Setup guide")
 
@@ -47,6 +48,7 @@ resource_caching =  st.Page("caching/resource_caching.py", title="Resource cachi
 
 test = st.Page("test.py", title="Test")
 
+intro_pages = [intro]
 setup_pages = [setup]
 elements_pages = [text_elements, data_elements, media_elements, create_profile]
 charts_pages = [ visual_intro, builtin_charts, create_charts, supported_libs]
