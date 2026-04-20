@@ -119,7 +119,7 @@ with st.container(border=True):
             column_config={"name": "App name",
                            "url": st.column_config.LinkColumn("App URL", disabled=True),
                            "likes": st.column_config.ProgressColumn("Stars", max_value=1000, format="%d ⭐"),
-                           "in_progress": st.column_config.SelectboxColumn("In progress?")，
+                           "in_progress": st.column_config.SelectboxColumn("In progress?"),
                            "views_history": st.column_config.LineChartColumn("Views", y_min=0, y_max=5000)}
         )
 
