@@ -6,6 +6,7 @@ setup = st.Page("setup/setup.py", title="Setup guide")
 text_elements = st.Page("page_elements/text_elements.py", title="Text and text formatting")
 data_elements = st.Page("page_elements/data_elements.py", title="Data elements")
 media_elements = st.Page("page_elements/media_elements.py", title="Media elements")
+create_profile = st.Page("page_elements/profile.py", title="🎯Create personal profile")
 
 visual_intro = st.Page("charts/visual_intro.py", title="Introduction to data visualization")
 builtin_charts = st.Page("charts/builtin_charts.py", title="Built-in charting functions")
@@ -47,7 +48,7 @@ resource_caching =  st.Page("caching/resource_caching.py", title="Resource cachi
 test = st.Page("test.py", title="Test")
 
 setup_pages = [setup]
-elements_pages = [text_elements, data_elements, media_elements]
+elements_pages = [text_elements, data_elements, media_elements, create_profiel]
 charts_pages = [ visual_intro, builtin_charts, create_charts, supported_libs]
 widgets_pages = [widget_types, defaults, create_dynamic_chart]
 widgets_advanced_pages = [button, keys, value_init, callbacks, 
