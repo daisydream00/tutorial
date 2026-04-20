@@ -14,7 +14,7 @@ st.markdown("### :material/list_alt: [`st.write()`](https://docs.streamlit.io/de
 
 
 """
-This is the Swiss Army knife of Streamlit commands: it does different things depending on what you throw at it. 
+`st.write()` acts as a "Swiss army knife" for displaying text, data, or objects in Streamlit. It is a versatile function that automatically determines how to render the content based on the input type. 
 """
 
  
@@ -68,30 +68,8 @@ with st.container(border=True):
 
             > Check out [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/) for a quick reference. 
         """
-        st.markdown(passage)
-
-"""###### Can show bullet points"""
-
-with st.container(border=True):
-    with st.echo():
-        st.markdown("""
-                    ##### Coursework
-                    - Data Analytics
-                        - Regression
-                        - Classification
-                    - Programming
-                        - Python
-                        - SQL
-                    """)        
-
-
-"""###### Can show emojis"""
-
-with st.container(border=True):
-    with st.echo():
-        st.markdown("a smiling face emoji 😊")        
-
-
+        st.markdown(passage)   
+        
 """###### Support emoji shortcodes"""
 
 with st.container(border=True):
@@ -138,6 +116,10 @@ st.divider()
 
 st.markdown("### :material/list_alt: [`st.html()`](https://docs.streamlit.io/develop/api-reference/utilities/st.html)")
 
+"""
+`st.html()`  allows you to embed custom HTML content directly in your Streamlit app. 
+"""
+
 with st.container(border=True):
     with st.echo():
         st.html(
@@ -153,6 +135,9 @@ st.divider()
 
 st.markdown("### :material/list_alt: [`st.code()`](https://docs.streamlit.io/develop/api-reference/text/st.code)")
 
+"""
+`st.code()` a function used to display code snippets in a visually formatted and syntax-highlighted manner within your Streamlit app. 
+"""
 
 with st.container(border=True):
     with st.echo():
@@ -188,6 +173,9 @@ st.divider()
 
 st.markdown("### :material/list_alt: [`st.divider()`](https://docs.streamlit.io/develop/api-reference/text/st.divider)")
 
+"""
+`st.divider()` helps you render a horizontal line in your app. 
+"""
 
 with st.container(border=True):
     with st.echo():
@@ -212,8 +200,16 @@ with st.container(border=True):
 
         st.subheader("Setup Instructions")
 
-        st.caption("This page illustrates various text and formatting commands availableis in Streamlit.")
+        st.caption("This page illustrates various text and formatting commands available in Streamlit.")
         
         st.error("This is an error! Here are the causes: ...")
 
         st.latex(r'''a + ar + a r^2 + \cdots + a r^{n-1} = a \left(\frac{1-r^{n}}{1-r}\right)''')
+
+
+
+
+
+
+
+
