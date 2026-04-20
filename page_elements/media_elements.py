@@ -27,7 +27,7 @@ st.divider()
 
 st.markdown("### :material/list_alt: [`st.video()`](https://docs.streamlit.io/develop/api-reference/media/st.video)")
 
-st.markdown("""The `st.image()` is used to display video content in your app.
+st.markdown("""The `st.video()` is used to display video content in your app.
 """)
 
 with st.container(border=True):
