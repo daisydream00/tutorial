@@ -105,8 +105,8 @@ with st.container(border=True):
             column_config={"name": "App name",
                            "url": st.column_config.LinkColumn("App URL"),
                            "likes": st.column_config.NumberColumn("Stars", format="%d ⭐"),
-                           "views_history": st.column_config.BarChartColumn("Views", y_min=0, y_max=5000),
-                           "in_progress": "In progress?"},
+                           "in_progress": "In progress?",
+                           "views_history": st.column_config.BarChartColumn("Views", y_min=0, y_max=5000)},
             hide_index=True,
             column_order=("name", "url", "views_history", "likes", "in_progress")
         )
