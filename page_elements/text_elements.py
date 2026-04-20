@@ -70,12 +70,6 @@ with st.container(border=True):
         """
         st.markdown(passage)   
         
-"""###### Can show emojis"""
-
-with st.container(border=True):
-    with st.echo():
-        st.markdown("a smiling face emoji 😊")        
-
 """###### Support emoji shortcodes"""
 
 with st.container(border=True):
