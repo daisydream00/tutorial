@@ -72,17 +72,7 @@ with st.container(border=True):
 
 """###### Can show bullet points"""
 
-with st.container(border=True):
-    with st.echo():
-        st.markdown("""
-                    ##### Coursework
-                    - Data Analytics
-                        - Regression
-                        - Classification
-                    - Programming
-                        - Python
-                        - SQL
-                    """)        
+       
         
 """###### Can show emojis"""
 
