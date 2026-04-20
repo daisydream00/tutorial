@@ -61,7 +61,8 @@ layouts_pages = [sidebar, columns, containers, tabs]
 #layouts_pages = [sidebar, columns, containers, chat_UI, tabs]
 exercise = st.Page("dashboard/dashboard.py", title="In-class exercise 5")
 
-pg = st.navigation({"⚙️Setup": setup_pages,
+pg = st.navigation({"📘Introduction": intro_pages,
+                    "⚙️Setup": setup_pages,
                     "📑Page elements": elements_pages, 
                     "📊Charts": charts_pages,
                     "📱Widgets": widgets_pages,
