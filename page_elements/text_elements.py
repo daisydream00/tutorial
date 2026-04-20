@@ -68,11 +68,7 @@ with st.container(border=True):
 
             > Check out [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/) for a quick reference. 
         """
-        st.markdown(passage)
-
-"""###### Can show bullet points"""
-
-       
+        st.markdown(passage)   
         
 """###### Can show emojis"""
 
