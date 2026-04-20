@@ -68,8 +68,29 @@ with st.container(border=True):
 
             > Check out [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/) for a quick reference. 
         """
-        st.markdown(passage)   
+        st.markdown(passage) 
         
+"""###### Can show bullet points"""
+
+with st.container(border=True):
+    with st.echo():
+        st.markdown("""
+                    ##### Coursework
+                    - Data Analytics
+                        - Regression
+                        - Classification
+                    - Programming
+                        - Python
+                        - SQL
+                    """)        
+
+
+"""###### Can show emojis"""
+
+with st.container(border=True):
+    with st.echo():
+        st.markdown("a smiling face emoji 😊")        
+       
 """###### Support emoji shortcodes"""
 
 with st.container(border=True):
