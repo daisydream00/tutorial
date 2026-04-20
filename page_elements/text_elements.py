@@ -70,7 +70,18 @@ with st.container(border=True):
         """
         st.markdown(passage)
 
-
+with st.container(border=True):
+    with st.echo():
+        st.markdown("""
+                    ##### Coursework
+                    - Data Analytics
+                        - Regression
+                        - Classification
+                    - Programming
+                        - Python
+                        - SQL
+                    """)        
+        
 """###### Can show emojis"""
 
 with st.container(border=True):
