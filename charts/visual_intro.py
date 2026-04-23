@@ -8,7 +8,7 @@ with open( "static/font.css" ) as css:
 st.markdown("""## Data visualization
 
 Visualization is a fundamental tool for the modern data scientists. It is often the central lens used
-to understand items such as statistical models (for example, via an AUC chart), the distribution
+to understand elements such as statistical models (for example, via an AUC chart), the distribution
 of a crucial variable (via a histogram), or even important business metrics.
                             
 Essentially, data visualization is a process of expressing many aspects of our data by ***mapping variables (either discrete or continuous) in our data to various visual elements*** (a.k.a. **aesthetics**) that make up the final graphic, such as position on the x and y axes, colors, shapes, sizes, etc.
