@@ -19,7 +19,7 @@ st.markdown("""### :material/description:  Requirements
     - Course table
     - Editable skills table 
             
-- This exercise strictly uses only the following Streamlit methods: `st.title`, `st.write`, `st.markdown`, `st.html`, `st.dataframe`, `st.data_editor`, and `st.column_config`. No other Streamlit methods are allowed.
+- This exercise strictly uses only the following Streamlit methods: `st.title`, `st.write`, `st.markdown`, `st.dataframe`, `st.data_editor`, and `st.column_config`. No other Streamlit methods are allowed.
 """)
 
 st.divider()
