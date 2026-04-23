@@ -77,20 +77,14 @@ with st.container(border=True):
 
     skills = pd.DataFrame({
         "Skill": ["Python", "SQL", "Excel"],
-        "Proficiency (1-5)": [4, 3, 5],
+        "Proficiency": [4, 3, 5],
         "Years of Experience": [2, 1, 3]
     })
 
     st.data_editor(
         skills,
         column_config={
-            "Proficiency (1-5)": st.column_config.NumberColumn(
-                "Proficiency Level",
-                format="%d ⭐"
-            ),
-            "Years of Experience": st.column_config.NumberColumn(
-                "Years of Experience",
-                format="%d"
-            )
+            "Proficiency": st.column_config.NumberColumn(format="%d ⭐"),
+            "Years of Experience": st.column_config.NumberColumn(format="%d")
         }
     )
