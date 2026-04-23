@@ -40,7 +40,7 @@ If we align `color` with a categorical variable (i.e., a column that contains di
 st.markdown("#### :material/code_blocks: :blue[Source code to run]")
 
 code ="""
-st.line_chart(medals, x="year", y="total",
+st.line_chart(medals, x="year", y="total", color="type"
               width=720, height=500)
 """
 
@@ -51,7 +51,7 @@ with st.container(border=True):
 st.markdown("#### :material/ssid_chart: :red[Rendered output]") 
 
 with st.container(border=True):
-    st.line_chart(medals, x="year", y="total", color="type", 
+    st.line_chart(medals, x="year", y="total", 
                   width=720, height=500)
 
 with st.expander("Show documentation"):
