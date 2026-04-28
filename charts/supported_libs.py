@@ -63,6 +63,10 @@ st.plotly_chart(fig)
 with st.container(border=True):
     st.code(code)
 
+st.markdown("""
+- `animation_frame="year"`: Splits your data into time-based "frames" (one frame per unique year) and creates a playback slider below the chart
+- `animation_group="country"`: Tells Plotly which points represent the same entity across frames; Connects a country in 1952 to the SAME country in 1957, 1962, etc.
+""")
 st.markdown("#### :material/animation: :red[Rendered output]") 
 
 with st.container(border=True):
