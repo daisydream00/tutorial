@@ -308,6 +308,11 @@ st.map(us_city_pop, latitude="lat", longitude="lon", size="pop_scaled", zoom=3)
 with st.container(border=True):
     st.code(code)
 
+st.markdown("""
+- `zoom=3` → Right geographic context for the entire US
+- `/20` → Scales population so markers aren't absurdly large at that zoom level
+""")
+
 st.markdown("#### :material/map: :red[Rendered output]") 
 
 with st.container(border=True):
