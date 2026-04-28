@@ -235,7 +235,8 @@ st.divider()
 st.markdown("### :material/list_alt: [`st.date_input()`](https://docs.streamlit.io/develop/api-reference/widgets/st.date_input)")
 
 st.markdown("<br/>", unsafe_allow_html=True)
- 
+
+st.code("from datetime import date")
 from datetime import date
 
 with st.container(border=True):
