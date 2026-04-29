@@ -29,10 +29,11 @@ st.divider()
 st.markdown("""### :material/description:  Requirements
 
 - Include a multiselect widget (`st.multiselect()`) to choose which stocks should be included for plotting; the default values are `'AMZN'` and `'AAPL'`.
- 
-- Include a slider widget (`st.slider()`) to indicate a specific year over which stocks are compared; the range is 2005 - 2009; the default value is 2006.
 
-- Include a checkbox widget (`st.checkbox()`) to indicate if the user wants to compare stocks for the whole period. The slider widget should be disabled when this widget is checked.
+- Include a checkbox widget (`st.checkbox()`) to indicate if the user wants to compare stocks for the whole period. 
+
+- Include a slider widget (`st.slider()`) to indicate a specific year over which stocks are compared; the range is 2005 - 2009; the default value is 2006. 
+The slider widget should be disabled when this widget is checked.
 
 - When none of the stocks are selected, display an error message, saying "Please select at least one stock!";
             
