@@ -43,6 +43,7 @@ When the checkbox is selected, the slider should be disabled.
     - [`DataFrame.query()`](https://pandas.pydata.org/docs/user_guide/indexing.html#the-query-method) can be used to filter data for plotting, 
         - e.g., if your variable that holds the selected stocks is called `stocks` and that holds the specified year is called `year`, `.query(f"date < {year + 1} and date >= {year} and symbol in {stocks}")` will give you the desired subset.
     - Assign the checkbox's return value to the [`disabled`](https://docs.streamlit.io/develop/api-reference/widgets/st.slider) parameter of `st.slider()` to control when to disable the slider.
+    - Compare how the displayed charts look when the checkbox is selected versus when it is not selected and write your code accordingly.
 """)
 
 st.divider()
