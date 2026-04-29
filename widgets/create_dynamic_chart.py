@@ -33,7 +33,7 @@ st.markdown("""### :material/description:  Requirements
 - Include a checkbox widget (`st.checkbox()`) to indicate if the user wants to compare stocks for the whole period. 
 
 - Include a slider widget (`st.slider()`) to indicate a specific year over which stocks are compared; the range is 2005 - 2009; the default value is 2006. 
-When the checkbox is selected, the slider should be disabled (by assigning the checkbox's return value to the `disabled` parameter in `st.slider()`).
+When the checkbox is selected, the slider should be disabled. Hint: This can be achieved by assigning the checkbox's return value to the `disabled` parameter in `st.slider()`).
 
 - When none of the stocks are selected, display an error message, saying "Please select at least one stock!";
             
