@@ -33,7 +33,7 @@ st.markdown("""### :material/description:  Requirements
 - Include a checkbox widget (`st.checkbox()`) to indicate if the user wants to compare stocks for the whole period. 
 
 - Include a slider widget (`st.slider()`) to indicate a specific year over which stocks are compared; the range is 2005 - 2009; the default value is 2006. 
-When the checkbox is selected, the slider should be disabled. Hint: This can be achieved by assigning the checkbox's return value to the `disabled` parameter in `st.slider()`).
+When the checkbox is selected, the slider should be disabled. 
 
 - When none of the stocks are selected, display an error message, saying "Please select at least one stock!";
             
@@ -42,7 +42,7 @@ When the checkbox is selected, the slider should be disabled. Hint: This can be 
     - Use the `.unique()` method to obtain the unique values of `symbol` column in the dataframe;
     - [`DataFrame.query()`](https://pandas.pydata.org/docs/user_guide/indexing.html#the-query-method) can be used to filter data for plotting, 
         - e.g., if your variable that holds the selected stocks is called `stocks` and that holds the specified year is called `year`, `.query(f"date < {year + 1} and date >= {year} and symbol in {stocks}")` will give you the desired subset.
-    - Use the [`disabled`](https://docs.streamlit.io/develop/api-reference/widgets/st.slider) option of `st.slider()` to control when to disable the slider.
+    - Assign the checkbox's return value to the [`disabled`](https://docs.streamlit.io/develop/api-reference/widgets/st.slider) parameter of `st.slider()` to control when to disable the slider.
 """)
 
 st.divider()
