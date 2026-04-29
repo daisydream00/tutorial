@@ -50,7 +50,7 @@ st.divider()
 st.markdown("#### :material/widgets: :red[Expected output]")
 
 with st.container(border=True):
-    stocks = st.multiselect("Select stocks for comparison", source.symbol.unique(), ['AMZN', 'AAPL'])
+    stocks = st.multiselect("Select stocks for comparison", source['symbol'].unique(), ['AMZN', 'AAPL'])
     all_years = st.checkbox("Show prices for the whole period")
     year = st.slider("Select a year", min_value=2005, max_value=2009, value=2006, disabled=all_years)
  
