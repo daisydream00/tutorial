@@ -28,7 +28,7 @@ import pandas as pd
 source = pd.read_csv("https://raw.githubusercontent.com/vega/vega-datasets/main/data/stocks.csv", 
                      parse_dates=['date'], date_format="%b %d %Y")
 
-stock = st.sidebar.selectbox("Select a stock", source.symbol.unique())
+stock = st.sidebar.selectbox("Select a stock", source['symbol'].unique())
 year = st.sidebar.slider("Select a year", 2004, 2010)
 
 query_str = f"date < {year + 1} and date >= {year} and symbol == '{stock}'"
@@ -53,7 +53,7 @@ source = pd.read_csv("https://raw.githubusercontent.com/vega/vega-datasets/main/
                      parse_dates=['date'], date_format="%b %d %Y")
 
 with st.sidebar:
-    stock = st.selectbox("Select a stock", source.symbol.unique())
+    stock = st.selectbox("Select a stock", source['symbol'].unique())
     year = st.slider("Select a year", 2004, 2010)
 
 query_str = f"date < {year + 1} and date >= {year} and symbol == '{stock}'"
@@ -70,7 +70,7 @@ st.markdown("#### :material/widgets: :red[Rendered output]")
 
 
 with st.container(border=True):
-    stock = st.sidebar.selectbox("Select a stock", source.symbol.unique())
+    stock = st.sidebar.selectbox("Select a stock", source['symbol'].unique())
     year = st.sidebar.slider("Select a year", 2004, 2010)
     st.markdown(f"### Prices for `{stock}` in {year}<br>", unsafe_allow_html=True)
  
