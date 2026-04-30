@@ -8,18 +8,16 @@ st.set_page_config(layout="wide")
 with open( "static/font.css" ) as css:
     st.markdown( f'<style>{css.read()}</style>' , unsafe_allow_html= True)
 
-st.markdown("## 🎯 Create Your Student Personal Webpage")
+st.markdown("## 🎯 Create Student Course Dashboard")
 
 st.markdown("""### :material/description:  Requirements
 
-- Build a simple personal student webpage that includes:
+- Create a simple Streamlit app that demonstrates layout and interaction features. The app should:
 
-    - Personal information
-    - About Me section
-    - Course table
-    - Editable skills table 
-            
-- This exercise strictly uses only the following Streamlit methods: `st.title`, `st.write`, `st.markdown`, `st.dataframe`, `st.data_editor`, and `st.column_config`. No other Streamlit methods are allowed.
+    - Use a sidebar for user input (e.g., selecting a course),
+    - Organize content using tabs,
+    - Display information using columns for clean layout,
+    - Include a button that triggers a response (e.g., enrollment confirmation).          
 """)
 
 st.divider()
