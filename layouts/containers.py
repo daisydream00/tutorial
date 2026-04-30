@@ -46,8 +46,9 @@ st.markdown("""When a fixed height is provided, a grey border is shown around th
 
 code = """container = st.container(height=150)
 container.write("This is inside the container")
+container.write(":dog:")
 st.write("This is outside the container")
-container.write(":dog:")"""
+"""
 
 st.markdown("#### :material/code_blocks: :blue[Source code to run]")
 
