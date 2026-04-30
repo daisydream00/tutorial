@@ -24,7 +24,7 @@ To add elements to the returned tabs, we can use the `with` statement (preferred
 
 st.markdown("#### :material/code_blocks: :blue[Source code to run]")
 
-code = """ tab1, tab2, tab3 = st.tabs(["Cat", "Dog", "Owl"])    
+code = """tab1, tab2, tab3 = st.tabs(["Cat", "Dog", "Owl"])    
 with tab1:
     st.header("A cat")
     st.image("static/cat.jpg", width=200)
