@@ -25,64 +25,52 @@ st.divider()
 st.markdown("#### :material/ssid_chart: :red[Expected output]")
 
 with st.container(border=True):
-    import pandas as pd
+   st.title("📚 Student Course Dashboard")
 
-    # -------------------------
-    # Title Section
-    # -------------------------
-    st.title("John Zhang")  
-    st.write("Year 3 Undergraduate Student")
-    st.write("Information Systems Major, HKUST")
-
-    # -------------------------
-    # About Me
-    # -------------------------
-    st.markdown("""
-    ### About Me
-
-    I am interested in data analytics, digital innovation, and technology management.
-
-    ##### Interests
-    - Programming
-    - Startups
-    - Artificial Intelligence
-
-    [Visit My University Website](https://www.ust.hk)
-    """)
-
-    # -------------------------
-    # Courses Table
-    # -------------------------
-    st.markdown("### Courses Taken")
-
-    courses = pd.DataFrame({
-        "Course Code": ["ISOM1010", "ISOM2020", "ISOM3030"],
-        "Course Name": [
-            "Introduction to IS",
-            "Business Programming",
-            "Data Analytics"
-        ],
-        "Semester": ["Fall 2023", "Spring 2024", "Fall 2024"],
-        "Grade": ["A", "A-", "B+"]
-    })
-
-    st.dataframe(courses)
-
-    # -------------------------
-    # Skills (Editable Table)
-    # -------------------------
-    st.markdown("### Skills")
-
-    skills = pd.DataFrame({
-        "Skill": ["Python", "SQL", "Excel"],
-        "Proficiency": [4, 3, 5],
-        "Years of Experience": [2, 1, 3]
-    })
-
-    st.data_editor(
-        skills,
-        column_config={
-            "Proficiency": st.column_config.NumberColumn(format="%d ⭐"),
-            "Years of Experience": st.column_config.NumberColumn(format="%d")
-        }
+    # ----------------------
+    # Sidebar
+    # ----------------------
+    st.sidebar.header("Course Selection")
+    
+    course = st.sidebar.selectbox(
+        "Choose a course:",
+        ["Python Basics", "Data Science", "Web Development"]
     )
+    
+    st.sidebar.write("Selected:", course)
+    
+    # ----------------------
+    # Tabs
+    # ----------------------
+    tab1, tab2 = st.tabs(["Course Info", "Statistics"])
+    
+    with tab1:
+        st.subheader(f"{course} Overview")
+        st.write("This course will help you build practical skills.")
+    
+        # Columns inside tab
+        col1, col2 = st.columns(2)
+    
+        with col1:
+            st.write("**Duration:** 6 weeks")
+    
+        with col2:
+            st.write("**Level:** Beginner")
+    
+        # Button
+        if st.button("Enroll Now"):
+            st.success("You have successfully enrolled!")
+    
+    with tab2:
+        st.subheader("Course Statistics")
+    
+        col1, col2, col3 = st.columns(3)
+    
+        with col1:
+            st.write("**Students Enrolled:** 120")
+    
+        with col2:
+            st.write("**Average Rating:** 4.5 ⭐")
+    
+        with col3:
+            st.write("**Projects Included:** 5")
