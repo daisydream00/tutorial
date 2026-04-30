@@ -52,8 +52,8 @@ intro_pages = [intro]
 setup_pages = [setup]
 elements_pages = [text_elements, data_elements, media_elements, create_profile]
 charts_pages = [ visual_intro, builtin_charts, create_charts, supported_libs]
-widgets_pages = [widget_types, defaults, create_dynamic_chart]
-widgets_advanced_pages = [button, keys, value_init, callbacks, 
+widgets_pages = [widget_types, defaults, create_dynamic_chart, button, keys]
+widgets_advanced_pages = [value_init, callbacks, 
                  show_hide_message, display_image, advanced_todo_list, forms, cleanup]
 sessions_pages = [sessions, check_state_item, count_reruns, create_todo_list]
 caching_pages = [caching_intro, data_caching, resource_caching]
