@@ -31,7 +31,7 @@ advanced_todo_list = st.Page("widgets/advanced_todo_list.py", title="🎯Build a
 sidebar = st.Page("layouts/sidebar.py", title="Sidebar")
 columns = st.Page("layouts/columns.py", title="Columns")
 containers = st.Page("layouts/containers.py", title="Containers")
-
+create_course = st.Page("layouts/course.py", title="🎯Create course dashboard")
 chat_UI = st.Page("layouts/chat_UI.py", title="🎯Create improved chat UI")
 
 tabs = st.Page("layouts/tabs.py", title="Tabs")
@@ -57,7 +57,7 @@ widgets_advanced_pages = [value_init, callbacks,
                  show_hide_message, display_image, advanced_todo_list, forms, cleanup]
 sessions_pages = [sessions, check_state_item, count_reruns, create_todo_list]
 caching_pages = [caching_intro, data_caching, resource_caching]
-layouts_pages = [sidebar, columns, containers, tabs]
+layouts_pages = [sidebar, columns, containers, tabs, create_course]
 #layouts_pages = [sidebar, columns, containers, chat_UI, tabs]
 exercise = st.Page("dashboard/dashboard.py", title="In-class exercise 5")
 
