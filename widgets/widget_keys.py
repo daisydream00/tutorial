@@ -18,8 +18,11 @@ st.markdown("""
 
 st.markdown("#### :material/code_blocks: :blue[Source code to run]")
 
-code = """x = st.slider('Choose a value', 0, 10)
-y = st.slider('Choose a value', 0, 10)"""
+code = """try:
+    x = st.slider('Choose a value', 0, 10)
+    y = st.slider('Choose a value', 0, 10)
+    except Exception as e:
+        st.error(e)"""
 
 with st.container(border=True):
     st.code(code)
