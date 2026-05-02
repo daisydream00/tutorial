@@ -25,7 +25,7 @@ st.divider()
 st.markdown("#### :material/ssid_chart: :red[Expected output]")
 
 with st.container(border=True):
-   st.title("📚 Student Course Dashboard")
+    st.title("📚 Student Course Dashboard")
     # ----------------------
     # Sidebar
     # ----------------------
