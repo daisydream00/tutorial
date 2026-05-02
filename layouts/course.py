@@ -10,17 +10,31 @@ with open( "static/font.css" ) as css:
 
 st.markdown("## 🎯 Create Student Course Dashboard")
 
+st.markdown("### :material/dataset: Data to use")
+
+with st.echo():
+    import pandas as pd
+    
+    course_df = pd.DataFrame(
+        {
+            "Duration": ["6 weeks", "8 weeks", "10 weeks"],
+            "Level": ["Beginner", "Intermediate", "Intermediate"],
+            "Students Enrolled": [120, 95, 75],
+            "Average Rating": [4.5, 4.7, 4.4],
+            "Projects Included": [3, 5, 4]
+        },
+        index=["Python Basics", "Data Science", "Web Development"]
+    )
+
+st.divider()
+
 st.markdown("""### :material/description:  Requirements
 
 - Create a simple Streamlit app that demonstrates layout and interaction features. The app should:
 
     - Use a sidebar for user input (e.g., selecting a course),
     - Organize content using tabs,
-    - Display information using columns for clean layout,
-    - Include a button that triggers a response (e.g., enrollment confirmation).  
-    
-- This exercise uses the following Streamlit methods: `st.title`, `st.sidebar`, `st.write`, and `st.tabs``.
-
+    - Display information using columns for clean layout,  
 """)
 
 st.divider()
