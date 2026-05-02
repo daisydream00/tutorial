@@ -26,7 +26,7 @@ st.markdown("#### :material/ssid_chart: :red[Expected output]")
 
 with st.container(border=True):
    st.title("📚 Student Course Dashboard")
-        # ----------------------
+    # ----------------------
     # Sidebar
     # ----------------------
     st.sidebar.header("Course Selection")
