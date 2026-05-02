@@ -35,6 +35,7 @@ st.markdown("""### :material/description:  Requirements
     - Use a sidebar for user input ("Choose a course"). You can obtain the options by using `course_df.index`.
     - Organize content using tabs, "Course Info" and "Statistics".
     - Display information using columns for clean layout. Check the expected output for details.
+    - Hint: You can use the `.loc` method in Pandas to retrieve the desired course attribute from the `course_df` DataFrame.
 """)
 
 st.divider()
