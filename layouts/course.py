@@ -32,14 +32,11 @@ with st.container(border=True):
     # ----------------------
     # Sidebar
     # ----------------------
-    st.sidebar.header("Course Selection")
     
     course = st.sidebar.selectbox(
         "Choose a course:",
         ["Python Basics", "Data Science", "Web Development"]
     )
-    
-    st.sidebar.write("Selected:", course)
     
     # ----------------------
     # Tabs
@@ -47,7 +44,7 @@ with st.container(border=True):
     tab1, tab2 = st.tabs(["Course Info", "Statistics"])
 
     with tab1:
-        st.subheader(f"{course} Overview")
+        st.write(f"### {course} Overview")
         st.write("This course will help you build practical skills.")
     
         # Columns inside tab
