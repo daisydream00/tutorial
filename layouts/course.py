@@ -17,7 +17,10 @@ st.markdown("""### :material/description:  Requirements
     - Use a sidebar for user input (e.g., selecting a course),
     - Organize content using tabs,
     - Display information using columns for clean layout,
-    - Include a button that triggers a response (e.g., enrollment confirmation).          
+    - Include a button that triggers a response (e.g., enrollment confirmation).  
+    
+- This exercise uses the following Streamlit methods: `st.title`, `st.sidebar`, `st.write`, and `st.tabs``.
+
 """)
 
 st.divider()
