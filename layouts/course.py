@@ -31,10 +31,10 @@ st.divider()
 st.markdown("""### :material/description:  Requirements
 
 - Create a simple Streamlit app that demonstrates layout and interaction features. The app should:
-
-    - Use a sidebar for user input (e.g., selecting a course),
-    - Organize content using tabs,
-    - Display information using columns for clean layout,  
+    - Use the title of `"📚 Student Course Dashboard"`
+    - Use a sidebar for user input ("Choose a course"). You can obtain the options by using `course_df.index`.
+    - Organize content using tabs, "Course Info" and "Statistics".
+    - Display information using columns for clean layout. Check the expected output for details.
 """)
 
 st.divider()
@@ -49,7 +49,7 @@ with st.container(border=True):
     
     course = st.sidebar.selectbox(
         "Choose a course:",
-        ["Python Basics", "Data Science", "Web Development"]
+        course_df.index
     )
     
     # ----------------------
@@ -59,34 +59,30 @@ with st.container(border=True):
 
     with tab1:
         st.write(f"### {course} Overview")
-        st.write("This course will help you build practical skills.")
-    
+        
         # Columns inside tab
         col1, col2 = st.columns(2)
     
         with col1:
-            st.write("**Duration:** 6 weeks")
+            st.write(f"**Duration:** {course_df.loc[course,'Duration']}")
     
         with col2:
-            st.write("**Level:** Beginner")
-    
-        # Button
-        if st.button("Enroll Now"):
-            st.success("You have successfully enrolled!")
-    
+            st.write(f"**Level:** {course_df.loc[course,'Level']}")
+
     with tab2:
-        st.subheader("Course Statistics")
+        st.write("### Course Statistics")
     
         col1, col2, col3 = st.columns(3)
     
         with col1:
-            st.write("**Students Enrolled:** 120")
+            st.write(f"**Students Enrolled:** {course_df.loc[course,'Students Enrolled']}")
     
         with col2:
-            st.write("**Average Rating:** 4.5 ⭐")
+            st.write(f"**Average Rating:** {course_df.loc[course,'Average Rating']} ⭐")
     
         with col3:
-            st.write("**Projects Included:** 5")
+            st.write(f"**Projects Included:** {course_df.loc[course,'Projects Included']}")
+    
     
 
 
