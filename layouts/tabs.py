@@ -45,18 +45,18 @@ st.markdown("#### :red[Rendered output]")
 
 tab1, tab2, tab3 = st.tabs(["Cat", "Dog", "Owl"])
 
-with st.container(border=True):
-    with tab1:
-        st.header("A cat")
-        st.image("static/cat.jpg", width=200)
 
-    with tab2:
-        st.header("A dog")
-        st.image("static/dog.jpg", width=200)
+with tab1:
+    st.header("A cat")
+    st.image("static/cat.jpg", width=200)
 
-    with tab3:
-        st.header("An owl")
-        st.image("static/owl.jpg", width=200)
+with tab2:
+    st.header("A dog")
+    st.image("static/dog.jpg", width=200)
+
+with tab3:
+    st.header("An owl")
+    st.image("static/owl.jpg", width=200)
 
 
 
