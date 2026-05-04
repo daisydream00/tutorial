@@ -28,6 +28,9 @@ st.markdown("""### :material/description:  Requirements
         - e.g., if the variable holding the selected stocks is `selected_tickers` and the variable holding the year range is `selected_years`, `query(f"Date < {selected_years[1] + 1} and Date >= {selected_years[0]} and Ticker in {selected_tickers}")` will give you the desired subset of data.
 """)          
 
+st.divider()
+
+st.markdown("#### :material/ssid_chart: :red[Expected output]")
 
 # load stock info and data
 ticker_info = pd.read_csv("ticker_info.csv")
