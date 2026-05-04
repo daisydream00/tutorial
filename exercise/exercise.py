@@ -33,8 +33,8 @@ st.divider()
 st.markdown("#### :material/ssid_chart: :red[Expected output]")
 
 # load stock info and data
-ticker_info = pd.read_csv("ticker_info.csv")
-stock_data = pd.read_csv("stock_data.csv", parse_dates=['Date'])
+ticker_info = pd.read_csv("static/ticker_info.csv")
+stock_data = pd.read_csv("static/stock_data.csv", parse_dates=['Date'])
 
 # extract S&P 100 tickers from ticker_info
 tickers_100 = ticker_info.Ticker.unique()
