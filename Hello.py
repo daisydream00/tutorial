@@ -36,6 +36,7 @@ chat_UI = st.Page("layouts/chat_UI.py", title="🎯Create improved chat UI")
 
 tabs = st.Page("layouts/tabs.py", title="Tabs")
 
+exercise = st.Page("exercise/exercise.py", title="🎯In-Class Exercise 5")
 
 sessions = st.Page("sessions/sessions.py", title="Sessions and Session State")
 check_state_item = st.Page("sessions/check_state_item.py", title="Checking persistence of a state item")
@@ -53,6 +54,7 @@ setup_pages = [setup]
 elements_pages = [text_elements, data_elements, media_elements, create_profile]
 charts_pages = [ visual_intro, builtin_charts, create_charts, supported_libs]
 widgets_pages = [widget_types, defaults, create_dynamic_chart, button, keys]
+exercise_pages = [exercise]
 widgets_advanced_pages = [value_init, callbacks, 
                  show_hide_message, display_image, advanced_todo_list, forms, cleanup]
 sessions_pages = [sessions, check_state_item, count_reruns, create_todo_list]
@@ -67,6 +69,7 @@ pg = st.navigation({"📘Introduction": intro_pages,
                     "📊Charts": charts_pages,
                     "📱Widgets": widgets_pages,
                     "📰Layouts": layouts_pages,
+                    "📝Exercise": exercise_pages,
                     "📱Widgets_Adanced": widgets_advanced_pages,
                     "🕓Sessions": sessions_pages, 
                     "🗃️Caching":  caching_pages,
