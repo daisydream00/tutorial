@@ -26,6 +26,9 @@ with st.echo():
         index=["Python Basics", "Data Science", "Web Development"]
     )
 
+
+st.dataframe(course_df)   
+
 st.divider()
 
 st.markdown("""### :material/description:  Requirements
