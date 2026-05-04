@@ -8,10 +8,9 @@ st.set_page_config(page_title="Stock Dashboard", layout="wide")
 st.markdown("""### :material/description:  Requirements
 
 
-- :red[Optional task]: Please download `In-Class Exercise_5_part1.ipynb` from Canvas. Complete the code to extract relevant info from the **`yfinance`** libarary to generate two files `ticker_info.csv` and `stock_data.csv`.
 
-- The two data files are also available on Canvas if you want to skip the first part. Place these two files into your streamlit project folder and complete
-this second part of this exercise, which is to set up a streamlit application.
+- Download the two files `ticker_info.csv` and `stock_data.csv` from Canvas. Place these two files into your streamlit project folder and complete this second part of this exercise, which is to set up a streamlit application 
+(Note: if you are interested, you can also download `In-Class Exercise_5_part1.ipynb` from Canvas and complete the code to extract relevant info from the **`yfinance`** libarary to generate these two files. This part is optional).
             
 - Include a sidebar (`with st.sidebar`) that contains the following widgets:
     - A checkbox widget (`st.checkbox()`) that alows the user to control whether to show a bar chart that visualizes the market cap of S&P 100 stocks by sector; the default value is checked.
@@ -35,23 +34,19 @@ ticker_info = pd.read_csv("ticker_info.csv")
 stock_data = pd.read_csv("stock_data.csv", parse_dates=['Date'])
 
 # extract S&P 100 tickers from ticker_info
-# fill in the code below
 tickers_100 = ticker_info.Ticker.unique()
 
 # set page title
 st.title("S&P 100 Stock Dashboard 📊")  
 
 # Sidebar controls
-# fill in the code below
 with st.sidebar:
     st.header("Sidebar Widgets")
 
     # Checkbox widget
-    # fill in the code below
     show_sector = st.checkbox("Show Market Cap by Sector", True)
 
     # Multiselect widget
-    # fill in the code below
     selected_tickers = st.multiselect(
         "Select Companies",
         options=tickers_100,
@@ -59,7 +54,6 @@ with st.sidebar:
     )
 
     # Year range slider
-    # fill in the code below
     selected_years = st.slider(
         "Select Year Range",
         min_value=2020,
@@ -68,14 +62,12 @@ with st.sidebar:
     )
 
 # a bar chart that visualizes the market cap of S&P 100 stocks by sector
-# fill in the code below
 if show_sector:
     st.header("Market Cap by Sector")
     st.bar_chart(ticker_info, x="Sector", y="Market Cap (B)", color="Ticker", horizontal=True,
             width=720, height=500)
 
 # display price and volme charts if stocks are selected; show error message otherwise
-# fill in the code below
 if selected_tickers:
     st.header(f"Stock Trend Analysis ({selected_years[0]} - {selected_years[1]})")
     chart_data = stock_data.query(f"Date < {selected_years[1] + 1} and Date >= {selected_years[0]} and Ticker in {selected_tickers}")
