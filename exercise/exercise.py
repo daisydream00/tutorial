@@ -5,6 +5,7 @@ import pandas as pd
 # Configure page
 st.set_page_config(page_title="Stock Dashboard", layout="wide")
 
+st.__version__
 st.markdown("""### :material/description:  Requirements
 
 
