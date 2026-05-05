@@ -70,11 +70,12 @@ pg = st.navigation({"📘Introduction": intro_pages,
                     "📱Widgets": widgets_pages,
                     "📰Layouts": layouts_pages,
                     "📝Exercise": exercise_pages,
-                    "📱Widgets_Adanced": widgets_advanced_pages,
-                    "🕓Sessions": sessions_pages, 
-                    "🗃️Caching":  caching_pages,
+                    #"📱Widgets_Adanced": widgets_advanced_pages,
+                    #"🕓Sessions": sessions_pages, 
+                    #"🗃️Caching":  caching_pages,
                     #"📋In-class exercise": [exercise],
-                    "Test": [test]})
+                    #"Test": [test]
+                   })
 
 pg.run()
 
