@@ -15,7 +15,7 @@ st.markdown("""### :material/description:  Requirements
 - Include a sidebar (`with st.sidebar`) that contains the following widgets:
     - A checkbox widget (`st.checkbox()`) that alows the user to control whether to show a bar chart that visualizes the market cap of S&P 100 stocks by sector; the default value is checked.
     - A multiselect widget (`st.multiselect()`) that allows the user to choose which stocks should be included for plotting; the options are S&P 100 tickers; the default values are `'TSLA'`, `'NVDA'`, and `'AAPL'`.
-    - A slider widget (`st.slider()`) that allows the user to specify the year range over which stocks are compared; the range is 2020 - 2026; the default value is 2005 - 2026.
+    - A slider widget (`st.slider()`) that allows the user to specify the year range over which stocks are compared; the range is 2020 - 2026; the default value is 2025 - 2026.
            
 - If the checkbox is checked, display a bar chart that visualizes the market cap of S&P 100 stocks by sector.
 
