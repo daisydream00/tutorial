@@ -23,7 +23,7 @@ st.markdown("""### :material/description:  Requirements
   if stocks are selected, show a line chart for closing prices (using the column 'Close') and a bar chart for volume (using the column 'Volume').
             
 - Tips:
-    - Use the `.unique()` method to obtain the unique values of `Ticker` column in the Pandas dataframe `ticker_info`;
+    - Obtain the values of `Ticker` column in the Pandas dataframe `ticker_info` using `ticker_info['Ticker']``;
     - [`DataFrame.query()`](https://pandas.pydata.org/docs/user_guide/indexing.html#the-query-method) can be used to filter data for plotting, 
         - e.g., if the variable holding the selected stocks is `selected_tickers` and the variable holding the year range is `selected_years`, `query(f"Date < {selected_years[1] + 1} and Date >= {selected_years[0]} and Ticker in {selected_tickers}")` will give you the desired subset of data.
 """)          
